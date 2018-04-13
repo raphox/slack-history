@@ -18,5 +18,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "argv": "0.0.2",
+    "jsonfile": "^4.0.0",
+    "marked": "^0.3.19",
+    "uuid": "^3.2.1"
   }
 }

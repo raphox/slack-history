@@ -27,7 +27,7 @@ const Content = styled.section`
 `;
 
 const Aside = styled.aside`
-  flex: 0 1 415px;
+  flex: 0 0 415px;
   border-left: 1px solid #e8e8e8;
 
   h2, h3 {

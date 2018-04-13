@@ -43,6 +43,7 @@ class Channel extends Component {
                     </div>
                     <span className="body">
                       Insiro o native no input e boa<br />
+                      <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, magna eget suscipit tincidunt, libero est accumsan lorem, et rhoncus libero turpis vitae lectus. Etiam in nunc et risus aliquam aliquam. Sed et ligula non augue ultrices ullamcorper. Aenean hendrerit risus at ligula vehicula, eu vestibulum velit viverra. Curabitur eu est ullamcorper, tincidunt nisi id, luctus massa.</blockquote>
                       alguem sabe como indentifico esses casos:
                     </span>
                   </div>
@@ -166,6 +167,24 @@ const Article = styled.article`
     font-family: Monaco,Menlo,Consolas,"Courier New",monospace!important;
   }
 
+  blockquote {
+    position: relative;
+    margin: .25rem 0;
+    padding-left: 16px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 4px;
+      border-radius: 8px;
+      background: #e3e4e6;
+      content: '';
+    }
+  }
+
   ul.list {
     margin: 12px 0 45px 0;
 
@@ -189,6 +208,7 @@ const Article = styled.article`
       }
 
       .content {
+        width: 100%;
         .content_header {
           font-weight: bold;
 
