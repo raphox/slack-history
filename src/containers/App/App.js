@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import '@fortawesome/fontawesome-free-solid';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
@@ -13,7 +13,7 @@ import Author from 'components/author';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Wrapper>
           <Content>
             <AsideMenu />
@@ -29,7 +29,7 @@ class App extends Component {
             </p>
           </Footer>
         </Wrapper>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
