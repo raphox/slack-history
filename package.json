@@ -1,5 +1,6 @@
 {
   "name": "slack-history",
+  "homepage": "https://raphox.github.io/slack-history",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,8 @@
     "styled-components": "^3.2.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -27,6 +30,7 @@
   },
   "devDependencies": {
     "argv": "0.0.2",
+    "gh-pages": "^1.1.0",
     "jsonfile": "^4.0.0",
     "marked": "^0.3.19",
     "uuid": "^3.2.1"
