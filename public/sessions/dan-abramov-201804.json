@@ -2,215 +2,171 @@
   "info": {
     "details": "",
     "highlights": {
-      "redux": 24,
-      "ux": 25,
-      "components": 14,
-      "styled": 2,
-      "css": 11,
       "react": 36,
-      "ios": 1,
-      "ui": 7,
-      "thread": 3,
-      "native": 5,
+      "ux": 25,
+      "redux": 24,
+      "components": 14,
+      "css": 11,
       "async": 11,
-      "typescript": 2,
-      "relay": 4,
-      "form": 4,
       "book": 10,
-      "jsx": 1,
-      "backend": 1,
-      "fullstack": 1,
-      "reasonml": 1,
+      "mobile": 8,
+      "ui": 7,
+      "native": 5,
+      "thread": 4,
+      "form": 4,
+      "relay": 4,
       "open source": 2,
+      "typescript": 2,
+      "styled": 2,
       "frontend": 2,
       "ssr": 2,
-      "web": 1,
       "animations": 2,
+      "jsx": 1,
+      "backend": 1,
+      "ios": 1,
+      "web": 1,
+      "reasonml": 1,
       "pwa": 1,
-      "mobile": 8
+      "fullstack": 1
     },
     "authors": [
-      "Vinicius Rangel",
-      "Dan",
-      "thiago.leite",
-      "pvieira91",
-      "Jabur",
-      "Nic",
-      "sibelius",
-      "gabrielrubens",
-      "Marco Nicolodi",
-      "haz",
-      "r.santos",
-      "jpbretanha",
-      "weslopes",
-      "jcm",
-      "lucasbento",
-      "Lucas Sartori",
-      "rudiney",
-      "guilhermepontes",
-      "tiagosouto",
-      "@fdaciuk",
-      "andrei_calazans",
-      "Diego Nascimento",
       "@dnvtrn",
-      "brunolemos",
+      "@fdaciuk",
       "Aldo Jr.",
+      "Dan",
+      "Diego Nascimento",
+      "Jabur",
+      "Lucas Sartori",
+      "Marco Nicolodi",
+      "Nic",
+      "Vinicius Rangel",
+      "andrei_calazans",
+      "brunolemos",
       "fdaciuk",
+      "gabrielrubens",
+      "guilherme_vasconcelos",
+      "guilhermepontes",
+      "haz",
+      "jcm",
+      "jpbretanha",
       "leolopes",
-      "guilherme_vasconcelos"
+      "lucasbento",
+      "pvieira91",
+      "r.santos",
+      "rudiney",
+      "sibelius",
+      "thiago.leite",
+      "tiagosouto",
+      "weslopes"
     ]
   },
   "messages": [
     {
-      "id": "2a6b13c7-e31a-4eeb-bedf-89919c8e2585",
+      "id": "56818d77-99c6-41db-bcba-3d199b9262b9",
       "img": null,
       "username": "Vinicius Rangel",
       "time": "2:01 PM",
       "msg": "<p>Dan, there are bigger plans to redux this year?</p>\n",
       "messages": [
         {
-          "id": "effa5df8-f2ae-4d0b-a16c-bf0a45e1370c",
+          "id": "51e24d0b-62de-4fba-b748-8905684cc81d",
           "img": null,
           "username": "Dan",
           "time": "3:01 PM",
-          "msg": "<blockquote>\n<p>Dan, there are bigger plans to redux this year?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "f3d9d1af-99fb-4326-8eb0-003232e90bb0",
-          "img": null,
-          "username": "Dan",
-          "time": "3:01 PM",
-          "msg": "<p>Not sure what you mean :slightly_smiling_face: But I have no plans regarding Redux personally. I&#39;m not actively involved with maintaining it.</p>\n"
+          "msg": "<blockquote>\n<p>Dan, there are bigger plans to redux this year?</p>\n</blockquote>\n<p>Not sure what you mean :slightly_smiling_face: But I have no plans regarding Redux personally. I&#39;m not actively involved with maintaining it.</p>\n"
         }
       ]
     },
     {
-      "id": "09704cd8-3385-4b15-8de5-777a0cfc5d04",
+      "id": "aaacfd54-9029-484c-a905-320c56f453c4",
       "img": null,
       "username": "thiago.leite",
       "time": "2:02 PM",
       "msg": "<p>Andrew Clark said on his Twitter that class components will be considered as legacy APIs in the future, while function components will remain. We must take this statement in consideration in the projects that are under development/will be developed? And what is the best way to write a component?</p>\n",
       "messages": [
         {
-          "id": "0b14bd39-fcdc-4b88-af90-029174704e76",
+          "id": "6b557cd8-f1ce-47b0-b594-a39cf24c5f31",
           "img": null,
           "username": "Dan",
           "time": "3:02 PM",
-          "msg": "<blockquote>\n<p>Andrew Clark said on his Twitter that class components will be considered as legacy APIs in the future, while function components will remain. We must take this statement in consideration in the projects that are under development/will be developed? And what is the best way to write a component?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "efa74891-28bb-4e61-90b8-d6aa56e0f8b5",
-          "img": null,
-          "username": "Dan",
-          "time": "3:02 PM",
-          "msg": "<p>He also said on Twitter that we have dozens of thousands of class components and they aren&#39;t going anywhere :slightly_smiling_face: When/if we have a more convenient and less verbose way to declare components than classes, we&#39;ll definitely announce it, but I don&#39;t see how it could affect existing projects.</p>\n"
+          "msg": "<blockquote>\n<p>Andrew Clark said on his Twitter that class components will be considered as legacy APIs in the future, while function components will remain. We must take this statement in consideration in the projects that are under development/will be developed? And what is the best way to write a component?</p>\n</blockquote>\n<p>He also said on Twitter that we have dozens of thousands of class components and they aren&#39;t going anywhere :slightly_smiling_face: When/if we have a more convenient and less verbose way to declare components than classes, we&#39;ll definitely announce it, but I don&#39;t see how it could affect existing projects.</p>\n"
         }
       ]
     },
     {
-      "id": "fb828b35-9a8f-4c34-8d8a-5e3b1b40e0ec",
+      "id": "109b8142-33a0-466f-9ac8-929c494bf7af",
       "img": null,
       "username": "pvieira91",
       "time": "2:00 PM",
       "msg": "<p>1) Tests | We went from 0 to 100 in what regards unit testing. It’s pretty common nowadays to find companies that have very high thresholds on unit testings. Do you think that it’s valuable to impose a high unit test coverage even for presentational components?</p>\n",
       "messages": [
         {
-          "id": "a6fd6557-b0ab-4092-bd73-13d25a8cdbc2",
+          "id": "7dc04933-937f-4f97-ae5e-4b3b885f77af",
           "img": null,
           "username": "pvieira91",
           "time": "2:00 PM",
           "msg": "<p>2) Styling | What is your opinion of css-in-js? Do you prefer it over standard stylesheets (scss, css-modules, post-css etc) or it’s more interesting to use a css-in-js lib? If so, which one? (styled-components)?</p>\n"
         },
         {
-          "id": "3239ed0d-ac5a-4f35-8c8b-e49c04a1a026",
+          "id": "80da9f16-6d7b-4458-a47a-b61483299d9a",
           "img": null,
           "username": "Dan",
           "time": "3:05 PM",
-          "msg": "<blockquote>\n<p>1) Tests | We went from 0 to 100 in what regards unit testing. It’s pretty common nowadays to find companies that have very high thresholds on unit testings. Do you think that it’s valuable to impose a high unit test coverage even for presentational components?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "cb4962d5-9eb1-4005-a6df-643bf0f96270",
-          "img": null,
-          "username": "Dan",
-          "time": "3:05 PM",
-          "msg": "<p>Personally I don&#39;t find unit testing components very valuable. Especially if they just contain markup — you&#39;re basically testing that React works, and we have tests in React itself for that. I think some combination of integration tests for higher-level UI scenarios (click a button, something shows up) and unit tests for <em>logic</em> (e.g. complex calculations) is helpful. I&#39;m more skeptical of asserting on component output although I understand others might not agree.</p>\n"
-        },
-        {
-          "id": "6b66647c-e847-420b-8e73-85d1da156672",
-          "img": null,
-          "username": "Dan",
-          "time": "3:05 PM",
-          "msg": "<blockquote>\n<p>2) Styling | What is your opinion of css-in-js? Do you prefer it over standard stylesheets (scss, css-modules, post-css etc) or it’s more interesting to use a css-in-js lib? If so, which one? (styled-components)?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "79f5453d-53e9-4ea4-b717-4724595a7ca6",
-          "img": null,
-          "username": "Dan",
-          "time": "3:05 PM",
-          "msg": "<p>I don&#39;t care about this much. If I were writing something today for myself I&#39;d probably use vanilla CSS. Maybe glamor if there were a lot of dynamic styles.</p>\n"
+          "msg": "<blockquote>\n<p>1) Tests | We went from 0 to 100 in what regards unit testing. It’s pretty common nowadays to find companies that have very high thresholds on unit testings. Do you think that it’s valuable to impose a high unit test coverage even for presentational components?</p>\n</blockquote>\n<p>Personally I don&#39;t find unit testing components very valuable. Especially if they just contain markup — you&#39;re basically testing that React works, and we have tests in React itself for that. I think some combination of integration tests for higher-level UI scenarios (click a button, something shows up) and unit tests for <em>logic</em> (e.g. complex calculations) is helpful. I&#39;m more skeptical of asserting on component output although I understand others might not agree.</p>\n<blockquote>\n<p>2) Styling | What is your opinion of css-in-js? Do you prefer it over standard stylesheets (scss, css-modules, post-css etc) or it’s more interesting to use a css-in-js lib? If so, which one? (styled-components)?</p>\n</blockquote>\n<p>I don&#39;t care about this much. If I were writing something today for myself I&#39;d probably use vanilla CSS. Maybe glamor if there were a lot of dynamic styles.</p>\n"
         }
       ]
     },
     {
-      "id": "2cf6e778-4866-4860-9ab1-1a4965a577d5",
+      "id": "4caf7bae-d0ff-415b-b845-76c63666f8fe",
       "img": null,
       "username": "Jabur",
       "time": "3:05 PM",
       "msg": "<p>@Dan you can use threads</p>\n",
       "messages": [
         {
-          "id": "3a9576c9-8bef-4b2b-975c-fe6d6b831e8c",
+          "id": "9a0542dc-d138-4431-a571-7fe692e8e2fe",
           "img": null,
           "username": "Dan",
           "time": "3:06 PM",
           "msg": "<p>Sorry, I don&#39;t know how to use threads, I don&#39;t use Slack :slightly_smiling_face:</p>\n"
         },
         {
-          "id": "6ec4e06b-ae50-4782-a6ff-1bc5458b0485",
+          "id": "da059e1f-fb9a-490d-988c-9fb1851f225c",
           "img": null,
           "username": "Jabur",
           "time": "3:06 PM",
           "msg": "<p>np</p>\n"
-        }
-      ]
-    },
-    {
-      "id": "2e180d93-68a5-4ff8-94aa-e42a3c3a52f6",
-      "img": null,
-      "username": "Dan",
-      "time": "3:08 PM",
-      "msg": "<p>So I replied in a thread—should I continue in it or there?</p>\n",
-      "messages": [
+        },
         {
-          "id": "b0a247be-aa91-4bda-88e1-65bcb2ee50ec",
+          "id": "cd578df2-3850-4562-872e-f2a0b9f1526c",
           "img": null,
           "username": "Dan",
           "time": "3:08 PM",
-          "msg": "<p>It doesn&#39;t show up here..</p>\n"
+          "msg": "<p>So I replied in a thread—should I continue in it or there?</p>\n<p>It doesn&#39;t show up here..</p>\n"
         },
         {
-          "id": "d9c3014f-119f-4b7d-a598-dcef22816a48",
+          "id": "67aa3fa0-97ee-4ea4-9cb0-15a7813ea027",
           "img": null,
           "username": "Nic",
           "time": "3:06 PM",
           "msg": "<p>uploaded this image: Here!</p>\n"
         },
         {
-          "id": "e47980e1-9711-4d81-a730-e960b6497ad4",
+          "id": "b5832198-ad05-475c-b440-e926e46bf43a",
           "img": null,
           "username": "sibelius",
           "time": "3:08 PM",
           "msg": "<p>you can post here</p>\n"
         },
         {
-          "id": "a1345572-d7fc-4881-b352-866aafc1a95f",
+          "id": "3960c250-5f75-44fd-a6a7-c3c628e37ce2",
           "img": null,
           "username": "Dan",
           "time": "3:08 PM",
           "msg": "<p>I&#39;ll just post everything here. Threads are hard to discover.</p>\n"
         },
         {
-          "id": "9dfeddf9-d403-4658-af2e-450a2f24f1c5",
+          "id": "ffe1d354-1099-449b-90b8-4f36c330da55",
           "img": null,
           "username": "Jabur",
           "time": "3:09 PM",
@@ -219,1269 +175,660 @@
       ]
     },
     {
-      "id": "53e36b93-6405-4834-bedc-d68438aac0f9",
+      "id": "6463f126-58be-471b-a75b-cabbea7244ff",
       "img": null,
       "username": "sibelius",
       "time": "2:03 PM",
       "msg": "<blockquote>\n<p>how will async react help in handling requests waterfall?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "b16c6639-cdab-4b85-9abc-8bd4e2fc45ba",
+          "id": "5960da58-f6c6-4706-95bc-2e8b55dc791d",
           "img": null,
           "username": "sibelius",
           "time": "2:03 PM",
-          "msg": "<blockquote>\n<p>how will async react improve react native?</p>\n</blockquote>\n"
+          "msg": "<blockquote>\n<p>how will async react improve react native?</p>\n</blockquote>\n<blockquote>\n<p>what is take on flow/typescript and reason?</p>\n</blockquote>\n<blockquote>\n<p>what next after relay modern?</p>\n</blockquote>\n"
         },
         {
-          "id": "eece5389-6b55-4065-bffc-f4608f1c4c02",
-          "img": null,
-          "username": "sibelius",
-          "time": "2:03 PM",
-          "msg": "<blockquote>\n<p>what is take on flow/typescript and reason?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "76fedc46-44f7-42f6-8f94-341e099740f9",
-          "img": null,
-          "username": "sibelius",
-          "time": "2:03 PM",
-          "msg": "<blockquote>\n<p>what next after relay modern?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "35ae8feb-ee3c-490b-8568-aacdf14dad50",
+          "id": "a1b86fe5-a312-477f-bb2b-0e3e567fac65",
           "img": null,
           "username": "Dan",
           "time": "3:14 PM",
-          "msg": "<blockquote>\n<p>how will async react help in handling requests waterfall?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "3f665760-ef34-4d65-b40d-a2529677ff34",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<p>Not sure what exactly is being asked. But my guess is this is about the case where you have a parent and child component that each request some data, but it could&#39;ve been requested in parallel.</p>\n"
-        },
-        {
-          "id": "b4ccd216-7c86-4f0c-ac92-13de88782291",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<p>With “suspense” APIs (part of async React), we think it’s much simpler to “move” async dependencies up and down the tree without re-wiring the props or changing the app architecture. This is because all components are backed by the same cache. So I think async React would help avoid waterfalls by making it easier to optimistically <em>preload</em> resources that you think components below will need. Similar to <code>&lt;link rel=&quot;preload&quot;&gt;</code> in HTML.</p>\n"
-        },
-        {
-          "id": "b43f5dfb-bb34-4018-b8c5-91f9865f3860",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<blockquote>\n<p>how will async react improve react native?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "249281fb-c4b9-489c-8851-eab54873effe",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<p>There&#39;s work in progress on revamping React Native architecture to better take advantage of async rendering and solving some existing pain points regarding interop with sync code. I’m not the best person to talk about that though.</p>\n"
-        },
-        {
-          "id": "1a9bbf71-0cf0-42e7-8031-021801acf40a",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<blockquote>\n<p>what is take on flow/typescript and reason?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "672a5585-37bb-4751-8f09-470f8e315886",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<p>I’m personally comfortable with JS + some sprinkles of Flow where I’m not confident what’s going on with types. Not a fan of having to annotate everything. I haven’t tried Reason yet so I don’t know if I’ll like it.</p>\n"
-        },
-        {
-          "id": "1ec1c6dd-c30b-4b7c-aeb0-df5946961ef7",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<blockquote>\n<p>what next after relay modern?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "a438af16-f377-453a-816e-24a6d1fe3886",
-          "img": null,
-          "username": "Dan",
-          "time": "3:14 PM",
-          "msg": "<p>I don’t know, is there something missing in it? My understanding is that the Relay team is happy with performance wins from Modern. We might need to change the React bindings to it to better take advantage of the upcoming React async features, but I don’t know more.</p>\n"
+          "msg": "<blockquote>\n<p>how will async react help in handling requests waterfall?</p>\n</blockquote>\n<p>Not sure what exactly is being asked. But my guess is this is about the case where you have a parent and child component that each request some data, but it could&#39;ve been requested in parallel.</p>\n<p>With “suspense” APIs (part of async React), we think it’s much simpler to “move” async dependencies up and down the tree without re-wiring the props or changing the app architecture. This is because all components are backed by the same cache. So I think async React would help avoid waterfalls by making it easier to optimistically <em>preload</em> resources that you think components below will need. Similar to <code>&lt;link rel=&quot;preload&quot;&gt;</code> in HTML.</p>\n<blockquote>\n<p>how will async react improve react native?</p>\n</blockquote>\n<p>There&#39;s work in progress on revamping React Native architecture to better take advantage of async rendering and solving some existing pain points regarding interop with sync code. I’m not the best person to talk about that though.</p>\n<blockquote>\n<p>what is take on flow/typescript and reason?</p>\n</blockquote>\n<p>I’m personally comfortable with JS + some sprinkles of Flow where I’m not confident what’s going on with types. Not a fan of having to annotate everything. I haven’t tried Reason yet so I don’t know if I’ll like it.</p>\n<blockquote>\n<p>what next after relay modern?</p>\n</blockquote>\n<p>I don’t know, is there something missing in it? My understanding is that the Relay team is happy with performance wins from Modern. We might need to change the React bindings to it to better take advantage of the upcoming React async features, but I don’t know more.</p>\n"
         }
       ]
     },
     {
-      "id": "73becd03-41d7-44d4-ab21-d4b282253783",
+      "id": "9f2cfcf5-bfe7-405b-8a8a-661cf12044ce",
       "img": null,
       "username": "gabrielrubens",
       "time": "2:05 PM",
       "msg": "<p>We all know that unit testing is important, but it’s hard to make sure that all cases are being covered in a test suite</p>\n",
       "messages": [
         {
-          "id": "3229b9ef-5421-4eea-a660-e7182ff5d154",
+          "id": "b59ef4e1-713b-4960-8f6b-9e7c6a3f8295",
           "img": null,
           "username": "gabrielrubens",
           "time": "2:05 PM",
           "msg": "<p>Is there any technique you guys use to make sure all test cases/possibilities are being covered besides only trusting in human review?</p>\n"
         },
         {
-          "id": "680525a7-9a84-4e41-8b4f-c450a43fd3cf",
+          "id": "64406e6b-7dce-477f-b8af-aa81e8f8dda7",
           "img": null,
           "username": "Dan",
           "time": "3:15 PM",
-          "msg": "<blockquote>\n<p>We all know that unit testing is important, but it’s hard to make sure that all cases are being covered in a test suite</p>\n</blockquote>\n"
-        },
-        {
-          "id": "c5c5360a-cd10-43b3-aec3-96d5e89ea4ff",
-          "img": null,
-          "username": "Dan",
-          "time": "3:15 PM",
-          "msg": "<blockquote>\n<p>Is there any technique you guys use to make sure all test cases/possibilities are being covered besides only trusting in human review?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "556944e3-1669-4d1d-9021-d656ef23c2e7",
-          "img": null,
-          "username": "Dan",
-          "time": "3:15 PM",
-          "msg": "<p>If this is about components, I’ll reiterate we don’t do that much unit testing of components at Facebook.</p>\n"
-        },
-        {
-          "id": "a6299ff7-79ff-4477-83bd-c4551f7384d0",
-          "img": null,
-          "username": "Dan",
-          "time": "3:15 PM",
-          "msg": "<p>If this is about React itself, we’re using fuzzy testing in some cases where there are too many possibilities. A fuzz test is like a test that generates some inputs randomly many times, and then asserts some conditions that we expect to always be true. If there’s a regression, we add it to a list of inputs that must always be tested. So that helps refine a fuzz test over time.</p>\n"
+          "msg": "<blockquote>\n<p>We all know that unit testing is important, but it’s hard to make sure that all cases are being covered in a test suite</p>\n</blockquote>\n<blockquote>\n<p>Is there any technique you guys use to make sure all test cases/possibilities are being covered besides only trusting in human review?</p>\n</blockquote>\n<p>If this is about components, I’ll reiterate we don’t do that much unit testing of components at Facebook.</p>\n<p>If this is about React itself, we’re using fuzzy testing in some cases where there are too many possibilities. A fuzz test is like a test that generates some inputs randomly many times, and then asserts some conditions that we expect to always be true. If there’s a regression, we add it to a list of inputs that must always be tested. So that helps refine a fuzz test over time.</p>\n"
         }
       ]
     },
     {
-      "id": "7531f963-51aa-48c0-a35b-d8e839c93c57",
+      "id": "577fb203-8dd4-41aa-baee-9e815d18c845",
       "img": null,
       "username": "Marco Nicolodi",
       "time": "3:09 PM",
       "msg": "<p>How do you balance fast delivery with code quality?</p>\n",
       "messages": [
         {
-          "id": "9187d838-0a80-4169-ae5f-df0890095f90",
+          "id": "8b4fb640-b384-42da-a323-0637e9cc634d",
           "img": null,
           "username": "Dan",
           "time": "3:16 PM",
-          "msg": "<blockquote>\n<p>How do you balance fast delivery with code quality?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "4db8b9d0-87b1-4c46-b557-cc4ef660eb18",
-          "img": null,
-          "username": "Dan",
-          "time": "3:16 PM",
-          "msg": "<p>We sacrifice either one or the other depending on what’s more important? :slightly_smiling_face:</p>\n"
+          "msg": "<blockquote>\n<p>How do you balance fast delivery with code quality?</p>\n</blockquote>\n<p>We sacrifice either one or the other depending on what’s more important? :slightly_smiling_face:</p>\n"
         }
       ]
     },
     {
-      "id": "a6f41bf3-7228-494c-9cd2-00165dcf6015",
+      "id": "4d866714-ae15-4cf2-92a9-e05549ed4f6b",
       "img": null,
       "username": "haz",
       "time": "2:56 PM",
       "msg": "<p>How did you start working on Facebook? Was invited? How was the process?</p>\n",
       "messages": [
         {
-          "id": "c3fdf693-6eaa-4198-ad1c-be51c4f39894",
+          "id": "2e3ac781-1ece-409b-a4fd-9ec127f4a32c",
           "img": null,
           "username": "Dan",
           "time": "3:18 PM",
-          "msg": "<blockquote>\n<p>How did you start working on Facebook? Was invited? How was the process?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "a2e0340e-c835-42e0-94bc-20ea8f30867d",
-          "img": null,
-          "username": "Dan",
-          "time": "3:18 PM",
-          "msg": "<p>I’ve chatted to recruiters a long time ago but they didn’t have any UK positions at the time, and I couldn’t get a US visa (and didn’t want one that much anyway). After about a year I bumped into Jing Chen at React Europe (I think she was on the Relay team at the time, although I’m not sure). She asked if I was interested in interviewing, and mentioned the London office. I said that I am, so she arranged for other speakers to interview me on the next day (so I skipped most of the conference), but it was a regular FB interview process (several interviews).</p>\n"
+          "msg": "<blockquote>\n<p>How did you start working on Facebook? Was invited? How was the process?</p>\n</blockquote>\n<p>I’ve chatted to recruiters a long time ago but they didn’t have any UK positions at the time, and I couldn’t get a US visa (and didn’t want one that much anyway). After about a year I bumped into Jing Chen at React Europe (I think she was on the Relay team at the time, although I’m not sure). She asked if I was interested in interviewing, and mentioned the London office. I said that I am, so she arranged for other speakers to interview me on the next day (so I skipped most of the conference), but it was a regular FB interview process (several interviews).</p>\n"
         }
       ]
     },
     {
-      "id": "1e59a61b-03b9-40b1-b15c-b329ff38266b",
+      "id": "3e538e56-cb3f-4da8-a060-f0e965d2fe29",
       "img": null,
       "username": "sibelius",
       "time": "2:15 PM",
       "msg": "<blockquote>\n<p>what do you think about recompose?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "09f56b6e-8935-4928-a35e-a4d353160650",
+          "id": "63422a73-89cf-42a3-876e-92c405d215eb",
           "img": null,
           "username": "Dan",
           "time": "3:19 PM",
-          "msg": "<blockquote>\n<p>what do you think about recompose?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "e84cc696-0419-40df-9e1a-526cc5dee020",
-          "img": null,
-          "username": "Dan",
-          "time": "3:19 PM",
-          "msg": "<p>Too much indirection.</p>\n"
+          "msg": "<blockquote>\n<p>what do you think about recompose?</p>\n</blockquote>\n<p>Too much indirection.</p>\n"
         }
       ]
     },
     {
-      "id": "8b3599cc-ed78-4c96-a904-76742b5de66e",
+      "id": "0463244c-2539-4e71-b916-562bb85d9c9e",
       "img": null,
       "username": "r.santos",
       "time": "2:10 PM",
       "msg": "<p>I hope not to do a dummy question but</p>\n",
       "messages": [
         {
-          "id": "887cccbd-e2e7-44aa-a86e-966430c0c1e3",
+          "id": "1c798e07-efa8-43ae-9592-2ebdf193076d",
           "img": null,
           "username": "r.santos",
           "time": "2:10 PM",
           "msg": "<p>Do you confirm that the new versions of React 16.3 and beyond is a way to avoid the use of redux 100% ?</p>\n"
         },
         {
-          "id": "73c4a528-8ee6-4515-b74f-f70fad8d2522",
+          "id": "9f93ec82-d8e3-4a13-ae7f-3f850d8ff9a0",
           "img": null,
           "username": "Dan",
           "time": "3:19 PM",
-          "msg": "<blockquote>\n<p>Do you confirm that the new versions of React 16.3 and beyond is a way to avoid the use of redux 100% ?</p>\n</blockquote>\n"
+          "msg": "<blockquote>\n<p>Do you confirm that the new versions of React 16.3 and beyond is a way to avoid the use of redux 100% ?</p>\n</blockquote>\n<p>I don&#39;t understand what&#39;s being asked. Can you clarify?</p>\n"
         },
         {
-          "id": "587a7dfb-7c2c-4e41-9079-58e4dba04544",
-          "img": null,
-          "username": "Dan",
-          "time": "3:19 PM",
-          "msg": "<p>I don&#39;t understand what&#39;s being asked. Can you clarify?</p>\n"
-        },
-        {
-          "id": "52932279-2604-4e6d-8b2f-c394d173c649",
+          "id": "0c9c8016-ddf8-46ab-91dc-d3096cfbe73b",
           "img": null,
           "username": "r.santos",
           "time": "2:13 PM",
           "msg": "<p>If someone is starting Studying React today do you think it still a good idea study redux as well?</p>\n"
         },
         {
-          "id": "6a7b6861-e642-4873-84ff-0361643bee1b",
+          "id": "49725e33-76dd-4cbe-b566-a8d4b894b29c",
           "img": null,
           "username": "Dan",
           "time": "3:21 PM",
-          "msg": "<blockquote>\n<p>If someone is starting Studying React today do you think it still a good idea study redux as well?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "889e7d19-b00f-417e-9ac1-c8c554bd675c",
-          "img": null,
-          "username": "Dan",
-          "time": "3:21 PM",
-          "msg": "<p>I always suggested learning React first before you look at Redux.</p>\n"
-        },
-        {
-          "id": "d9850fde-dc9b-43b5-abd0-e7e510a6f7dd",
-          "img": null,
-          "username": "Dan",
-          "time": "3:21 PM",
-          "msg": "<p>After you&#39;ve learned React, I think learning Redux makes sense even if you don&#39;t plan to use it. 90% of &quot;learning Redux&quot; isn&#39;t about Redux itself. It&#39;s about learning to use functional composition and immutability. That would come in handy regardless of whether you plan to use Redux APIs or rediscover the same patterns yourself when you use context API or something similar.</p>\n"
+          "msg": "<blockquote>\n<p>If someone is starting Studying React today do you think it still a good idea study redux as well?</p>\n</blockquote>\n<p>I always suggested learning React first before you look at Redux.</p>\n<p>After you&#39;ve learned React, I think learning Redux makes sense even if you don&#39;t plan to use it. 90% of &quot;learning Redux&quot; isn&#39;t about Redux itself. It&#39;s about learning to use functional composition and immutability. That would come in handy regardless of whether you plan to use Redux APIs or rediscover the same patterns yourself when you use context API or something similar.</p>\n"
         }
       ]
     },
     {
-      "id": "48342141-642d-4c19-9242-1891d4dce29c",
+      "id": "51a6a61c-8cd6-44a6-879d-3c7ee3c38b1d",
       "img": null,
       "username": "jpbretanha",
       "time": "2:15 PM",
       "msg": "<p>Should we start moving from using HoC’s and start to use render props?</p>\n",
       "messages": [
         {
-          "id": "291dfe43-fa11-421e-8ea1-cf2019209d80",
+          "id": "2adb186a-8409-4b21-8715-b006eaa85686",
           "img": null,
           "username": "Dan",
           "time": "3:21 PM",
-          "msg": "<blockquote>\n<p>Should we start moving from using HoC’s and start to use render props?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "c090a419-f68b-46f9-8156-cf6bfc21411c",
-          "img": null,
-          "username": "Dan",
-          "time": "3:21 PM",
-          "msg": "<p>I don&#39;t know, what looks clearer to you?</p>\n"
+          "msg": "<blockquote>\n<p>Should we start moving from using HoC’s and start to use render props?</p>\n</blockquote>\n<p>I don&#39;t know, what looks clearer to you?</p>\n"
         }
       ]
     },
     {
-      "id": "15d60742-e622-4699-b6be-1b30f2a98f2d",
+      "id": "2242a684-e90c-4c72-97a7-142eea464d18",
       "img": null,
       "username": "sibelius",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>is React going to add a compilation step soon?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "2166de5e-7050-481f-817c-a6e2f17543cb",
+          "id": "3a2d2447-03ef-4da8-bab7-c186d19bd5b1",
           "img": null,
           "username": "Dan",
           "time": "3:22 PM",
-          "msg": "<blockquote>\n<p>is React going to add a compilation step soon?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "bf0f5ff4-fc9a-4b93-85ae-a8d9de861c21",
-          "img": null,
-          "username": "Dan",
-          "time": "3:22 PM",
-          "msg": "<p>There is already a JSX compilation step but you&#39;re probably referring to whole program optimization. There are some experiments we&#39;re working on but I wouldn&#39;t say there&#39;re anywhere near &quot;soon&quot;.</p>\n"
+          "msg": "<blockquote>\n<p>is React going to add a compilation step soon?</p>\n</blockquote>\n<p>There is already a JSX compilation step but you&#39;re probably referring to whole program optimization. There are some experiments we&#39;re working on but I wouldn&#39;t say there&#39;re anywhere near &quot;soon&quot;.</p>\n"
         }
       ]
     },
     {
-      "id": "412b9415-7291-42f3-ad3e-b1dfc1d990c6",
+      "id": "b9a08354-5e86-4779-bd01-47c1e51035f5",
       "img": null,
       "username": "sibelius",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>how does Facebook handles flow-typed internally?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "50f034d9-517d-4f87-8a29-90b9fab6dedc",
+          "id": "e5ac6cb7-f88b-4bee-86f7-64deae180d83",
           "img": null,
           "username": "Dan",
           "time": "3:22 PM",
-          "msg": "<blockquote>\n<p>how does Facebook handles flow-typed internally?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "7cb93c03-1f27-4a8d-a367-1cd0f03172e9",
-          "img": null,
-          "username": "Dan",
-          "time": "3:22 PM",
-          "msg": "<p>I don&#39;t know.</p>\n"
+          "msg": "<blockquote>\n<p>how does Facebook handles flow-typed internally?</p>\n</blockquote>\n<p>I don&#39;t know.</p>\n"
         }
       ]
     },
     {
-      "id": "d45bfdba-72c0-4960-9fe4-bd90c0a0364b",
+      "id": "ad486a77-2513-4099-a2d5-e18d43b79302",
       "img": null,
       "username": "weslopes",
       "time": "2:24 PM",
       "msg": "<p>What about the microservices in front-end with react? It’s a good idea?</p>\n",
       "messages": [
         {
-          "id": "831e22e1-243c-4d96-aa19-b59bbb2747ec",
+          "id": "30725a2b-7278-4570-a162-20ca3e88810b",
           "img": null,
           "username": "Dan",
           "time": "3:23 PM",
-          "msg": "<blockquote>\n<p>What about the microservices in front-end with react? It’s a good idea?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "81a68e5e-714b-4089-a8ac-b36aa4315901",
-          "img": null,
-          "username": "Dan",
-          "time": "3:23 PM",
-          "msg": "<p>I don&#39;t know anything about microservices.</p>\n"
+          "msg": "<blockquote>\n<p>What about the microservices in front-end with react? It’s a good idea?</p>\n</blockquote>\n<p>I don&#39;t know anything about microservices.</p>\n"
         }
       ]
     },
     {
-      "id": "4c9d3c8c-3988-47fa-95f2-333e7987c3a3",
+      "id": "e84f1371-7bc8-4ed0-b587-b1ed5cf25be7",
       "img": null,
       "username": "sibelius",
       "time": "2:19 PM",
       "msg": "<blockquote>\n<p>will Facebook switch to fullstack Javascript? are you guys using nodejs in backend?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "5bb8e318-67f9-4023-8086-67375c163b6e",
+          "id": "3fd8fc41-f6ec-4696-8875-6f516c479b49",
           "img": null,
           "username": "Dan",
           "time": "3:24 PM",
-          "msg": "<blockquote>\n<p>will Facebook switch to fullstack Javascript? are you guys using nodejs in backend?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "49fc95d7-dab8-4a25-8945-320ec26c9885",
-          "img": null,
-          "username": "Dan",
-          "time": "3:24 PM",
-          "msg": "<p>No, FB uses a highly optimized runtime and language (HHVM, Hack) and there are no plans to swap it with Node.</p>\n"
+          "msg": "<blockquote>\n<p>will Facebook switch to fullstack Javascript? are you guys using nodejs in backend?</p>\n</blockquote>\n<p>No, FB uses a highly optimized runtime and language (HHVM, Hack) and there are no plans to swap it with Node.</p>\n"
         }
       ]
     },
     {
-      "id": "a56a635b-5fe4-4feb-bfa2-ec201bbfaebc",
+      "id": "3acf576c-cdb7-4e7f-83bd-2c7397c18875",
       "img": null,
       "username": "jcm",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>what do you think of function as child components ?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "3b7859a0-6303-4a84-87db-ab365761b4c7",
+          "id": "3943b6ca-f12f-4912-a203-019f465c3aff",
           "img": null,
           "username": "Dan",
           "time": "3:24 PM",
-          "msg": "<blockquote>\n<p>what do you think of function as child components ?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "065327ac-6d17-49f9-9f8d-4574be64e617",
-          "img": null,
-          "username": "Dan",
-          "time": "3:24 PM",
-          "msg": "<p>They&#39;re cool when the API is clear?</p>\n"
+          "msg": "<blockquote>\n<p>what do you think of function as child components ?</p>\n</blockquote>\n<p>They&#39;re cool when the API is clear?</p>\n"
         }
       ]
     },
     {
-      "id": "4de7fd87-462b-4341-9bad-8466258130f4",
+      "id": "67462b0b-8b2c-4de2-bd60-ce76fc9765c7",
       "img": null,
       "username": "Marco Nicolodi",
       "time": "3:23 PM",
       "msg": "<p>What are the most important things to check during code reviews?</p>\n",
       "messages": [
         {
-          "id": "e7c8f5df-b557-4135-9fe5-30a1d9843f66",
+          "id": "b4a3e30c-f2c5-486b-9ceb-1e53b9afeea5",
           "img": null,
           "username": "Dan",
           "time": "3:26 PM",
-          "msg": "<blockquote>\n<p>What are the most important things to check during code reviews?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "f34e5765-39cc-4e32-a312-54d8f19127f8",
-          "img": null,
-          "username": "Dan",
-          "time": "3:26 PM",
-          "msg": "<p>Semicolons.</p>\n"
-        },
-        {
-          "id": "7bc6839d-a645-4ebe-92ce-ea34b9279b9e",
-          "img": null,
-          "username": "Dan",
-          "time": "3:26 PM",
-          "msg": "<p>Okay, I&#39;m kidding.</p>\n"
-        },
-        {
-          "id": "72a6435c-3b40-4712-9e46-d6cc6a3e0fe9",
-          "img": null,
-          "username": "Dan",
-          "time": "3:26 PM",
-          "msg": "<p>If you don&#39;t have any type checker, I think it&#39;s most important to look out for potential crashes (<code>null</code> / <code>undefined</code>) as those are painful to diagnose and fix. Other than that, I don&#39;t know—depends on the kind of mistakes you usually notice and want to reduce?</p>\n"
+          "msg": "<blockquote>\n<p>What are the most important things to check during code reviews?</p>\n</blockquote>\n<p>Semicolons.</p>\n<p>Okay, I&#39;m kidding.</p>\n<p>If you don&#39;t have any type checker, I think it&#39;s most important to look out for potential crashes (<code>null</code> / <code>undefined</code>) as those are painful to diagnose and fix. Other than that, I don&#39;t know—depends on the kind of mistakes you usually notice and want to reduce?</p>\n"
         }
       ]
     },
     {
-      "id": "8ed2429a-341f-48b8-bc9f-c5c34095daed",
+      "id": "9759a5f8-1c3e-4bd3-ae24-b4b8c88402e9",
       "img": null,
       "username": "lucasbento",
       "time": "3:23 PM",
       "msg": "<p>How do you feel about ReasonML?</p>\n",
       "messages": [
         {
-          "id": "f44d82d9-d237-4e93-99e5-de29abcd7c98",
+          "id": "27bf46a1-5c1d-4905-b995-285367feac05",
           "img": null,
           "username": "Dan",
           "time": "3:26 PM",
-          "msg": "<blockquote>\n<p>How do you feel about ReasonML?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "4abbfe9c-a380-48a6-a7aa-8b464f236e78",
-          "img": null,
-          "username": "Dan",
-          "time": "3:26 PM",
-          "msg": "<p>Copy pasting from above:</p>\n"
-        },
-        {
-          "id": "f6a3a453-9f53-4291-b74e-a0fa6a3f90f1",
-          "img": null,
-          "username": "Dan",
-          "time": "3:26 PM",
-          "msg": "<blockquote>\n<p>I haven’t tried Reason yet so I don’t know if I’ll like it.</p>\n</blockquote>\n"
+          "msg": "<blockquote>\n<p>How do you feel about ReasonML?</p>\n</blockquote>\n<p>Copy pasting from above:</p>\n<blockquote>\n<p>I haven’t tried Reason yet so I don’t know if I’ll like it.</p>\n</blockquote>\n"
         }
       ]
     },
     {
-      "id": "f95dfb7a-c9e7-488d-aee3-4d467c7a9c26",
+      "id": "e15ae92b-93eb-4ce6-b735-9de195a3edec",
       "img": null,
       "username": "Lucas Sartori",
       "time": "2:32 PM",
       "msg": "<p>Hello Dan, I’m a great fan, really appreciate you taking your time to answer some questions here!</p>\n",
       "messages": [
         {
-          "id": "21cfb92c-c08f-417e-a2c2-c936e0069afc",
+          "id": "92c7e0c5-734e-4fb5-b8e4-1719479ec749",
           "img": null,
           "username": "Lucas Sartori",
           "time": "2:32 PM",
           "msg": "<p>So, I’m a junior developer that has been working with React and Javascript in general for less than a year. I’d like to ask you about your first steps into the programming world, what motivated you the most to keep going before you had any palpable success and what would you recommend a junior developer in dedicating himself in 2018?</p>\n"
         },
         {
-          "id": "54ba05e7-fb0e-4481-a00a-5c02eb5f248f",
+          "id": "74479f08-d149-48a8-86c3-dd15f6ea31b0",
           "img": null,
           "username": "Dan",
           "time": "3:29 PM",
-          "msg": "<blockquote>\n<p>I’d like to ask you about your first steps into the programming world, what motivated you the most to keep going before you had any palpable success and what would you recommend a junior developer in dedicating himself in 2018?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "6dbd095c-4c9f-4ae1-87d8-18dfd04b4faa",
-          "img": null,
-          "username": "Dan",
-          "time": "3:29 PM",
-          "msg": "<p>I started with Visual Basic so that&#39;s kind of a long time ago. Throwing things on a form and seeing it &quot;come alive&quot; when I press &quot;run&quot; was pretty magical. I don&#39;t think there was anything else that motivated really, I just liked making things.</p>\n"
-        },
-        {
-          "id": "a33e42e7-56e3-4419-8e47-b8d3829e3d18",
-          "img": null,
-          "username": "Dan",
-          "time": "3:29 PM",
-          "msg": "<p>I recommend building lots of small things</p>\n"
+          "msg": "<blockquote>\n<p>I’d like to ask you about your first steps into the programming world, what motivated you the most to keep going before you had any palpable success and what would you recommend a junior developer in dedicating himself in 2018?</p>\n</blockquote>\n<p>I started with Visual Basic so that&#39;s kind of a long time ago. Throwing things on a form and seeing it &quot;come alive&quot; when I press &quot;run&quot; was pretty magical. I don&#39;t think there was anything else that motivated really, I just liked making things.</p>\n<p>I recommend building lots of small things</p>\n"
         }
       ]
     },
     {
-      "id": "1e16d67c-6f59-4337-97eb-7371e5f7255b",
+      "id": "2e291b89-2ff4-463f-bec9-4cc73159edcf",
       "img": null,
       "username": "rudiney",
       "time": "3:25 PM",
       "msg": "<p>Not much a tech question but, how is the mood inside Facebook about this Cambridge Analytica data breach scandal? Can we expect big changes on the FB developers polices or any chance the open source tools licenses being reveiewed?</p>\n",
       "messages": [
         {
-          "id": "57896cef-abc2-4a71-8552-9190cc05ea33",
+          "id": "1530a38f-ee6a-45a0-8352-b9971c4cf18e",
           "img": null,
           "username": "Dan",
           "time": "3:34 PM",
-          "msg": "<blockquote>\n<p>Not much a tech question but, how is the mood inside Facebook about this Cambridge Analytica data breach scandal? Can we expect big changes on the FB developers polices or any chance the open source tools licenses being reveiewed?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "268e5ba1-e3fe-4220-acf0-02f167276461",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>The APIs that allowed this &quot;breach&quot; were closed down four years ago. I think at the time the policy was really naïve but there were also a lot of people who argued data should be &quot;more open&quot; and FB is evil for &quot;locking it down&quot;. So it&#39;s interesting how the perspective changes over a few years.</p>\n"
-        },
-        {
-          "id": "3edccca1-a806-4b29-b42d-4b80747d2c13",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>I think it&#39;s clear to everybody at the company now that the old vision was too idealistic, but even though they closed it down four years ago, the old mistakes keep chasing them :slightly_smiling_face: . I know there&#39;s a lot of people working hard on fixing problems like fake news, election integrity, abuse etc, so I think the company will survive through this and become wiser.</p>\n"
-        },
-        {
-          "id": "8618148e-4d7e-454f-a51f-ca38d925435f",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>I don&#39;t see how this relates to open source tools. Regarding developer APIs, yes, there&#39;s been some further lockdown on data apps could get, you can read about those changes at <a href=\"https://newsroom.fb.com\">https://newsroom.fb.com</a>.</p>\n"
-        },
-        {
-          "id": "47846e86-e66d-4a70-ae6d-36701ca4d842",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>Facebook Newsroompaulbynd</p>\n"
-        },
-        {
-          "id": "4c487a6f-10aa-4ffe-b5d5-ea05ce1a6d6c",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>Home</p>\n"
-        },
-        {
-          "id": "cc302a4e-639f-4ae4-97af-c95c1a7ea27f",
-          "img": null,
-          "username": "Dan",
-          "time": "3:34 PM",
-          "msg": "<p>View the latest news, announcements and media resources from Facebook.</p>\n"
+          "msg": "<blockquote>\n<p>Not much a tech question but, how is the mood inside Facebook about this Cambridge Analytica data breach scandal? Can we expect big changes on the FB developers polices or any chance the open source tools licenses being reveiewed?</p>\n</blockquote>\n<p>The APIs that allowed this &quot;breach&quot; were closed down four years ago. I think at the time the policy was really naïve but there were also a lot of people who argued data should be &quot;more open&quot; and FB is evil for &quot;locking it down&quot;. So it&#39;s interesting how the perspective changes over a few years.</p>\n<p>I think it&#39;s clear to everybody at the company now that the old vision was too idealistic, but even though they closed it down four years ago, the old mistakes keep chasing them :slightly_smiling_face: . I know there&#39;s a lot of people working hard on fixing problems like fake news, election integrity, abuse etc, so I think the company will survive through this and become wiser.</p>\n<p>I don&#39;t see how this relates to open source tools. Regarding developer APIs, yes, there&#39;s been some further lockdown on data apps could get, you can read about those changes at <a href=\"https://newsroom.fb.com\">https://newsroom.fb.com</a>.</p>\n<p>Facebook Newsroompaulbynd</p>\n<p>Home</p>\n<p>View the latest news, announcements and media resources from Facebook.</p>\n"
         }
       ]
     },
     {
-      "id": "0d8c40dd-c88c-4655-8d03-c20754e6a8b3",
+      "id": "dafd5edb-dfa6-4cc5-a218-d28fe1d45d30",
       "img": null,
       "username": "guilhermepontes",
       "time": "3:27 PM",
       "msg": "<p>What is your typical day like?</p>\n",
       "messages": [
         {
-          "id": "9405f63a-84e5-4313-ba47-3febe4e74e12",
+          "id": "2f118c95-bcb2-4a26-93b5-7fac7c745a69",
           "img": null,
           "username": "Dan",
           "time": "3:35 PM",
-          "msg": "<blockquote>\n<p>What is your typical day like?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "ae728bdf-4dd4-4d50-ae83-856a161f9a1f",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Woke up, fell out of bed</p>\n"
-        },
-        {
-          "id": "fb1b9144-13bd-4904-a49b-12f0637949e4",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Dragged a comb across my head</p>\n"
-        },
-        {
-          "id": "1531d114-d37d-4b82-ab8e-2ab14f992317",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Found my way downstairs and drank a cup</p>\n"
-        },
-        {
-          "id": "d637ec4a-0d33-40a0-b0e1-955a139f5eb1",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>And looking up I noticed I was late</p>\n"
-        },
-        {
-          "id": "ce49b588-fc16-4f64-8cea-4ee10218c9f5",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Found my coat and grabbed my hat</p>\n"
-        },
-        {
-          "id": "58492af5-b088-48a0-8369-23e839594972",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Made the bus in seconds flat</p>\n"
-        },
-        {
-          "id": "c27373b8-8f81-49f0-9788-67f861574898",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>Made my way upstairs and had a smoke</p>\n"
-        },
-        {
-          "id": "c701f8bd-c14b-4983-a686-4250ec13add0",
-          "img": null,
-          "username": "Dan",
-          "time": "3:35 PM",
-          "msg": "<p>And everybody spoke and I went into a dream</p>\n"
+          "msg": "<blockquote>\n<p>What is your typical day like?</p>\n</blockquote>\n<p>Woke up, fell out of bed</p>\n<p>Dragged a comb across my head</p>\n<p>Found my way downstairs and drank a cup</p>\n<p>And looking up I noticed I was late</p>\n<p>Found my coat and grabbed my hat</p>\n<p>Made the bus in seconds flat</p>\n<p>Made my way upstairs and had a smoke</p>\n<p>And everybody spoke and I went into a dream</p>\n"
         }
       ]
     },
     {
-      "id": "cc6c854c-d614-4728-bfda-d2b3ff78534b",
+      "id": "21f615e6-6190-4af1-8601-c3792cbc9228",
       "img": null,
       "username": "lucasbento",
       "time": "3:25 PM",
       "msg": "<p>How’s the environment in Facebook HQ? How does it compare to a startup (in terms of bureaucracy, speed, etc)?</p>\n",
       "messages": [
         {
-          "id": "002fa9a1-86a5-40aa-8359-af65fc5ff84e",
+          "id": "a7662577-aba5-4a1f-bc89-351648f7c6ea",
           "img": null,
           "username": "Dan",
           "time": "3:36 PM",
-          "msg": "<blockquote>\n<p>How’s the environment in Facebook HQ? How does it compare to a startup (in terms of bureaucracy, speed, etc)?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "05abc8a6-2baf-4f73-ab4b-c10aaa107709",
-          "img": null,
-          "username": "Dan",
-          "time": "3:36 PM",
-          "msg": "<p>I don&#39;t really see any bureaucracy at all except cases where something has legal implications. Individual people and teams have a lot of agency.</p>\n"
+          "msg": "<blockquote>\n<p>How’s the environment in Facebook HQ? How does it compare to a startup (in terms of bureaucracy, speed, etc)?</p>\n</blockquote>\n<p>I don&#39;t really see any bureaucracy at all except cases where something has legal implications. Individual people and teams have a lot of agency.</p>\n"
         }
       ]
     },
     {
-      "id": "721b2e38-67f4-4792-bc6b-2af6092cc52d",
+      "id": "a0d3791c-c9df-4138-a0e5-75983d9facdc",
       "img": null,
       "username": "Jabur",
       "time": "3:36 PM",
       "msg": "<p>Do you think that the new versions of React - 16.3.0 and beyond - are going in a direction that will improve state management power to the point where Redux might become useless?</p>\n",
       "messages": [
         {
-          "id": "bfa7fffe-6d6d-4d5c-8e26-1368e73d0cac",
+          "id": "612da9e1-7769-4b67-a56e-1a51f6a63844",
           "img": null,
           "username": "Dan",
           "time": "3:39 PM",
-          "msg": "<blockquote>\n<p>Do you think that the new versions of React - 16.3.0 and beyond - are going in a direction that will improve state management power to the point where Redux might become useless?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "cf997d8a-1dc7-45dd-b091-2d8832d0921f",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>I think I sort of answered that. The point of Redux isn&#39;t &quot;Redux-the-library&quot;, it&#39;s the pattern of separating update logic from descriptions of &quot;what happened&quot;. Whether you use Redux-the-library or not, this pattern might be handy for some cases. I wrote an article a long time ago that both describes these cases and describes &quot;Redux without Redux&quot; at the end: <a href=\"https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367\">https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367</a></p>\n"
-        },
-        {
-          "id": "c2a22d73-c272-423d-8023-695397728e2f",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>I will also quote my earlier reply:</p>\n"
-        },
-        {
-          "id": "467b7ab4-c9e1-4b93-bfa9-465bfb15ab96",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<blockquote>\n<p>90% of &quot;learning Redux&quot; isn&#39;t about Redux itself. It&#39;s about learning to use functional composition and immutability. That would come in handy regardless of whether you plan to use Redux APIs or rediscover the same patterns yourself when you use context API or something similar.</p>\n</blockquote>\n"
-        },
-        {
-          "id": "25dd5cd4-2540-4e76-8ae5-fcf78626e3fe",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>Medium</p>\n"
-        },
-        {
-          "id": "d141ee18-edfa-43f7-a721-b2595641ba35",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>You Might Not Need Redux – Dan Abramov – Medium</p>\n"
-        },
-        {
-          "id": "339da1ef-cc54-4f05-b27c-cb6c7e57a5c3",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>People often choose Redux before they need it. “What if our app doesn’t scale without it?”</p>\n"
-        },
-        {
-          "id": "7abe4cf6-3fa5-418a-829a-892192cfb4cb",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>Reading time</p>\n"
-        },
-        {
-          "id": "a61ba22e-a979-4206-be1f-d270658dd8dc",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>3 min read</p>\n"
-        },
-        {
-          "id": "f2a6e20e-82e9-42dd-b0a5-5cc4c3bad8c3",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>Sep 19th, 2016</p>\n"
+          "msg": "<blockquote>\n<p>Do you think that the new versions of React - 16.3.0 and beyond - are going in a direction that will improve state management power to the point where Redux might become useless?</p>\n</blockquote>\n<p>I think I sort of answered that. The point of Redux isn&#39;t &quot;Redux-the-library&quot;, it&#39;s the pattern of separating update logic from descriptions of &quot;what happened&quot;. Whether you use Redux-the-library or not, this pattern might be handy for some cases. I wrote an article a long time ago that both describes these cases and describes &quot;Redux without Redux&quot; at the end: <a href=\"https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367\">https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367</a></p>\n<p>I will also quote my earlier reply:</p>\n<blockquote>\n<p>90% of &quot;learning Redux&quot; isn&#39;t about Redux itself. It&#39;s about learning to use functional composition and immutability. That would come in handy regardless of whether you plan to use Redux APIs or rediscover the same patterns yourself when you use context API or something similar.</p>\n</blockquote>\n<p>Medium</p>\n<p>You Might Not Need Redux – Dan Abramov – Medium</p>\n<p>People often choose Redux before they need it. “What if our app doesn’t scale without it?”</p>\n<p>Reading time</p>\n<p>3 min read</p>\n<p>Sep 19th, 2016</p>\n"
         }
       ]
     },
     {
-      "id": "ae3bf204-19bf-4e55-86dd-b158f6043cfd",
+      "id": "956b37c8-515f-4a87-bb50-db89a3575d0a",
       "img": null,
       "username": "tiagosouto",
       "time": "2:50 PM",
       "msg": "<p>what’s your opinion about RxJS?</p>\n",
       "messages": [
         {
-          "id": "740ab948-5b9d-43f2-915b-8bf38fd21739",
+          "id": "2fbd060e-1fc4-4eff-9fac-9db3d6157bc0",
           "img": null,
           "username": "Dan",
           "time": "3:39 PM",
-          "msg": "<blockquote>\n<p>what’s your opinion about RxJS?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "b45e97ba-8ecd-4dae-a691-075f4c6bd0be",
-          "img": null,
-          "username": "Dan",
-          "time": "3:39 PM",
-          "msg": "<p>I think it&#39;s cool for handling complex data flows. Not as much a fan of using it for UI composition.</p>\n"
+          "msg": "<blockquote>\n<p>what’s your opinion about RxJS?</p>\n</blockquote>\n<p>I think it&#39;s cool for handling complex data flows. Not as much a fan of using it for UI composition.</p>\n"
         }
       ]
     },
     {
-      "id": "1bf0f270-49b8-44fe-9904-75b83916e0ae",
+      "id": "1440b421-bf97-41f6-ba09-0d5553a10a7e",
       "img": null,
       "username": "lucasbento",
       "time": "3:22 PM",
       "msg": "<p>Right now you are working with open-source on your full-time job but how did you manage to work and maintain your personal projects on your free-time? Did you have a limit on how long time you would spend on it?</p>\n",
       "messages": [
         {
-          "id": "8485ee1a-b9bd-4375-a4a6-60e43d4ff849",
+          "id": "d4df2041-7e0b-4359-b4c9-b718f305dbe7",
           "img": null,
           "username": "Dan",
           "time": "3:40 PM",
-          "msg": "<blockquote>\n<p>Right now you are working with open-source on your full-time job but how did you manage to work and maintain your personal projects on your free-time? Did you have a limit on how long time you would spend on it?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "a92f65c6-2b97-4ebf-b29c-7ce5b3304e5b",
-          "img": null,
-          "username": "Dan",
-          "time": "3:40 PM",
-          "msg": "<p>I didn&#39;t work on personal projects that I also wouldn&#39;t be using at my main job.</p>\n"
+          "msg": "<blockquote>\n<p>Right now you are working with open-source on your full-time job but how did you manage to work and maintain your personal projects on your free-time? Did you have a limit on how long time you would spend on it?</p>\n</blockquote>\n<p>I didn&#39;t work on personal projects that I also wouldn&#39;t be using at my main job.</p>\n"
         }
       ]
     },
     {
-      "id": "72292ecd-8ab6-4bca-90da-0c419073a3a3",
+      "id": "ca4504b2-3e66-418f-a6b2-b506ad472ee7",
       "img": null,
       "username": "sibelius",
       "time": "3:39 PM",
       "msg": "<blockquote>\n<p>How Facebook structure their frontend code? there is a bunch of microapps? if so how to you make them communicate each other?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "10bb1b5f-7182-4f1d-80b1-9e220bea5470",
+          "id": "e6005e42-12fe-46ed-93f5-3c9460f6c2c9",
           "img": null,
           "username": "Dan",
           "time": "3:40 PM",
-          "msg": "<blockquote>\n<p>How Facebook structure their frontend code? there is a bunch of microapps? if so how to you make them communicate each other?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "6c5ea463-8ebc-4f6c-b814-62e952e3dbbb",
-          "img": null,
-          "username": "Dan",
-          "time": "3:40 PM",
-          "msg": "<p>No, it&#39;s a single monorepo. Any file can import any other file. (edited)</p>\n"
+          "msg": "<blockquote>\n<p>How Facebook structure their frontend code? there is a bunch of microapps? if so how to you make them communicate each other?</p>\n</blockquote>\n<p>No, it&#39;s a single monorepo. Any file can import any other file. (edited)</p>\n"
         }
       ]
     },
     {
-      "id": "3e4fa10d-86ea-48ec-9799-9bf75a7e7504",
+      "id": "d96f18c9-0e89-4844-ae51-678a49e11699",
       "img": null,
       "username": "@fdaciuk",
       "time": "3:41 PM",
       "msg": "<p>Hi Dan! Are you using SSR with HHVM? If yes, which tools are you using for? (edited)</p>\n",
       "messages": [
         {
-          "id": "8865cd4b-5164-44a0-b3a7-70d3af3b0733",
+          "id": "21980f49-57d4-4d81-b9b4-2caca9b3fc82",
           "img": null,
           "username": "Dan",
           "time": "3:42 PM",
-          "msg": "<blockquote>\n<p>Hi Dan! Are you using SSR with HHVM? If yes, which tools are you using for?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "0848234d-21e8-48a8-8f2e-50b9631885ee",
-          "img": null,
-          "username": "Dan",
-          "time": "3:42 PM",
-          "msg": "<p>Not sure what you mean but we don&#39;t currently server-render React components. On the server, we use XHP for server rendering (which is not related to React).</p>\n"
+          "msg": "<blockquote>\n<p>Hi Dan! Are you using SSR with HHVM? If yes, which tools are you using for?</p>\n</blockquote>\n<p>Not sure what you mean but we don&#39;t currently server-render React components. On the server, we use XHP for server rendering (which is not related to React).</p>\n"
         }
       ]
     },
     {
-      "id": "7a2f3c72-4b6b-4fca-8d33-06542f88bbe7",
+      "id": "8847f495-3d31-458a-8425-188c3bf696d2",
       "img": null,
       "username": "sibelius",
       "time": "3:41 PM",
       "msg": "<blockquote>\n<p>is there any machine learning algorithms to improve frontend code? I heard code splitting is done like that, any other places to apply ML in fronted?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "252d48c3-337b-466e-b8f8-f2b573d06663",
+          "id": "925d8116-a1b4-4fa1-813e-353ad4cd62df",
           "img": null,
           "username": "Dan",
           "time": "3:44 PM",
-          "msg": "<blockquote>\n<p>is there any machine learning algorithms to improve frontend code? I heard code splitting is done like that, any other places to apply ML in fronted?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "8f07f74a-a556-4eab-80af-72a2cb7ef60b",
-          "img": null,
-          "username": "Dan",
-          "time": "3:44 PM",
-          "msg": "<p>I don&#39;t know, but yea, we use it for code splitting.</p>\n"
+          "msg": "<blockquote>\n<p>is there any machine learning algorithms to improve frontend code? I heard code splitting is done like that, any other places to apply ML in fronted?</p>\n</blockquote>\n<p>I don&#39;t know, but yea, we use it for code splitting.</p>\n"
         }
       ]
     },
     {
-      "id": "707b79e7-dca4-46e5-933c-ba733286ec7f",
+      "id": "e3ae39ea-d902-43cf-8838-b56c8d46af4c",
       "img": null,
       "username": "andrei_calazans",
       "time": "3:41 PM",
       "msg": "<p>Do you think Mobx has grown to become a better state handler than Redux? whats your opinion on that?</p>\n",
       "messages": [
         {
-          "id": "8cc9af1a-e4df-4157-8381-155a2d25fd47",
+          "id": "13bd43a4-740b-405d-9333-447b0645f719",
           "img": null,
           "username": "Dan",
           "time": "3:45 PM",
-          "msg": "<blockquote>\n<p>Do you think Mobx has grown to become a better state handler than Redux? whats your opinion on that?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "40f46786-f597-4d77-843c-59c791d9714a",
-          "img": null,
-          "username": "Dan",
-          "time": "3:45 PM",
-          "msg": "<p>Personally I’m not a fan of mutation. :slightly_smiling_face: It’s cool if it solves your problems but it makes some other things that are important to me harder.</p>\n"
+          "msg": "<blockquote>\n<p>Do you think Mobx has grown to become a better state handler than Redux? whats your opinion on that?</p>\n</blockquote>\n<p>Personally I’m not a fan of mutation. :slightly_smiling_face: It’s cool if it solves your problems but it makes some other things that are important to me harder.</p>\n"
         }
       ]
     },
     {
-      "id": "5e9e6583-d9a1-4274-b80c-30365d5e7247",
+      "id": "180648e7-dc71-4266-9fa6-233c52a73198",
       "img": null,
       "username": "Diego Nascimento",
       "time": "3:42 PM",
       "msg": "<p>What do you think about other forms of DOM manipulation, such as incremental-dom or glimmer?</p>\n",
       "messages": [
         {
-          "id": "bb9753e0-5f14-4eef-8ac0-00ec00238140",
+          "id": "1847d4cd-535a-4b6e-89dd-6b463f7f9a06",
           "img": null,
           "username": "Dan",
           "time": "3:46 PM",
-          "msg": "<blockquote>\n<p>What do you think about other forms of DOM manipulation, such as incremental-dom or glimmer?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "24bf7de4-7eb8-4518-90b6-f3bd2f5ae1d1",
-          "img": null,
-          "username": "Dan",
-          "time": "3:46 PM",
-          "msg": "<p>I think the work glimmer is doing with AOT compilation is interesting. I don&#39;t know much about <code>incremental-dom</code> but I don&#39;t think DOM is the best fundamental abstraction to build a component system on. (That&#39;s my personal opinion)</p>\n"
+          "msg": "<blockquote>\n<p>What do you think about other forms of DOM manipulation, such as incremental-dom or glimmer?</p>\n</blockquote>\n<p>I think the work glimmer is doing with AOT compilation is interesting. I don&#39;t know much about <code>incremental-dom</code> but I don&#39;t think DOM is the best fundamental abstraction to build a component system on. (That&#39;s my personal opinion)</p>\n"
         }
       ]
     },
     {
-      "id": "7b419d6b-bc24-46e0-ac64-a21f5f6582b1",
+      "id": "b1dd9445-6834-4a14-9972-18f9482d1517",
       "img": null,
       "username": "@dnvtrn",
       "time": "3:45 PM",
       "msg": "<p>What is the best solution to work with SSR and Create React App, avoiding the known problem about Google SEO web crawlers?</p>\n",
       "messages": [
         {
-          "id": "8d51598a-b7e5-41f5-83ca-7ed4fe4c5d45",
+          "id": "5d7feeee-8382-4d53-a788-d17368f6c6ed",
           "img": null,
           "username": "Dan",
           "time": "3:47 PM",
-          "msg": "<blockquote>\n<p>What is the best solution to work with SSR and Create React App, avoiding the known problem about Google SEO web crawlers?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "2b652ba8-2f68-404f-99f1-2fe2282f2bbd",
-          "img": null,
-          "username": "Dan",
-          "time": "3:47 PM",
-          "msg": "<p>I don&#39;t know. You tell me. :slightly_smiling_face:</p>\n"
+          "msg": "<blockquote>\n<p>What is the best solution to work with SSR and Create React App, avoiding the known problem about Google SEO web crawlers?</p>\n</blockquote>\n<p>I don&#39;t know. You tell me. :slightly_smiling_face:</p>\n"
         }
       ]
     },
     {
-      "id": "075718c6-b772-4789-a454-646e2a7b1df0",
+      "id": "6b7fa8b2-f5e8-4509-8106-6f3d65374cf2",
       "img": null,
       "username": "sibelius",
       "time": "3:42 PM",
       "msg": "<blockquote>\n<p>how async react will improve animations frameworks?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "4584c9b1-f81c-46cb-a904-25e536b030d8",
+          "id": "c457d87e-7594-4e9d-a306-5a6a34efe7a9",
           "img": null,
           "username": "Dan",
           "time": "3:48 PM",
-          "msg": "<blockquote>\n<p>how async react will improve animations frameworks?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "65805680-af44-469c-8204-9d520a797beb",
-          "img": null,
-          "username": "Dan",
-          "time": "3:48 PM",
-          "msg": "<p>I don&#39;t think async React itself is going to help animation libraries. Although it should help block the thread less which should reduce jankiness of the animations when there are other updates happening.</p>\n"
+          "msg": "<blockquote>\n<p>how async react will improve animations frameworks?</p>\n</blockquote>\n<p>I don&#39;t think async React itself is going to help animation libraries. Although it should help block the thread less which should reduce jankiness of the animations when there are other updates happening.</p>\n"
         }
       ]
     },
     {
-      "id": "ad498ca9-5700-4e22-b323-34c3533807f9",
+      "id": "d3b7b01f-bede-4d7f-b43a-b00d34f9746d",
       "img": null,
       "username": "sibelius",
       "time": "3:43 PM",
       "msg": "<blockquote>\n<p>which other technical fields would you like to work? robots?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "97043ecb-8a9e-4f07-b045-ff36f3ef8a99",
+          "id": "edaeffee-44ca-4f48-a663-70151b937a00",
           "img": null,
           "username": "Dan",
           "time": "3:49 PM",
-          "msg": "<blockquote>\n<p>which other technical fields would you like to work? robots?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "7a680e5c-3552-4a68-a461-578f0b915f88",
-          "img": null,
-          "username": "Dan",
-          "time": "3:49 PM",
-          "msg": "<p>I don&#39;t think I have a lot of interest in other technical fields</p>\n"
+          "msg": "<blockquote>\n<p>which other technical fields would you like to work? robots?</p>\n</blockquote>\n<p>I don&#39;t think I have a lot of interest in other technical fields</p>\n"
         }
       ]
     },
     {
-      "id": "6f20386b-ba01-4b08-b4ba-41470d323d5d",
+      "id": "af53efe4-29f4-40c6-b707-c38a1b4a0be3",
       "img": null,
       "username": "brunolemos",
       "time": "3:48 PM",
       "msg": "<p>What is that you think may be big in a few years that only a few people is paying attention right now?</p>\n",
       "messages": [
         {
-          "id": "c761b2a8-09e3-44ce-8a48-4796710eb14e",
+          "id": "58e395f0-0bd9-491c-829c-8fe37d958912",
           "img": null,
           "username": "Dan",
           "time": "3:50 PM",
-          "msg": "<blockquote>\n<p>What is that you think may be big in a few years that only a few people is paying attention right now?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "3633ce50-36b9-491e-ba0c-d1105c2591bc",
-          "img": null,
-          "username": "Dan",
-          "time": "3:50 PM",
-          "msg": "<p>I&#39;m hoping some ideas from async React will become more commonplace in other view libraries</p>\n"
+          "msg": "<blockquote>\n<p>What is that you think may be big in a few years that only a few people is paying attention right now?</p>\n</blockquote>\n<p>I&#39;m hoping some ideas from async React will become more commonplace in other view libraries</p>\n"
         }
       ]
     },
     {
-      "id": "ab898378-e53f-4524-9ac4-179e6c6a3137",
+      "id": "b324e41f-34d7-4637-9b1a-f8fdf0d56a1a",
       "img": null,
       "username": "brunolemos",
       "time": "3:47 PM",
       "msg": "<p>Thoughts on Flutter?</p>\n",
       "messages": [
         {
-          "id": "771cc464-6f67-47a5-9bac-2d3c7b91c808",
+          "id": "18d89bd5-e216-4f1c-ba24-e838c70ee756",
           "img": null,
           "username": "Dan",
           "time": "3:51 PM",
-          "msg": "<blockquote>\n<p>Thoughts on Flutter?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "d27ebdca-3ff5-4370-afd5-c0df4d51fed0",
-          "img": null,
-          "username": "Dan",
-          "time": "3:51 PM",
-          "msg": "<p>Separating state logic into reusable pieces seems nice. We&#39;re thinking about this.</p>\n"
+          "msg": "<blockquote>\n<p>Thoughts on Flutter?</p>\n</blockquote>\n<p>Separating state logic into reusable pieces seems nice. We&#39;re thinking about this.</p>\n"
         }
       ]
     },
     {
-      "id": "3546d384-2598-42ae-a58c-b61883a2a818",
+      "id": "d99fe761-78c7-4cb2-9b72-aeec949be17d",
       "img": null,
       "username": "Aldo Jr.",
       "time": "3:51 PM",
       "msg": "<p>Dan, what do you think about PWA?</p>\n",
       "messages": [
         {
-          "id": "ad355033-7aa8-4667-873c-697b18325a0a",
+          "id": "393d1122-888b-4bfe-9720-d4be637de166",
           "img": null,
           "username": "Dan",
           "time": "3:51 PM",
-          "msg": "<blockquote>\n<p>Dan, what do you think about PWA?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "cd58fd37-72bd-4376-bd44-976095d9d969",
-          "img": null,
-          "username": "Dan",
-          "time": "3:51 PM",
-          "msg": "<p>I think the premise is good but service workers need better UX</p>\n"
+          "msg": "<blockquote>\n<p>Dan, what do you think about PWA?</p>\n</blockquote>\n<p>I think the premise is good but service workers need better UX</p>\n"
         }
       ]
     },
     {
-      "id": "5875a488-b64e-42de-9362-a23df8b4c239",
+      "id": "acb4e591-6f01-4441-8cff-06a309149b03",
       "img": null,
       "username": "fdaciuk",
       "time": "3:49 PM",
       "msg": "<p>When did you start learning functional programming? Could you recommend any language to get start with?</p>\n",
       "messages": [
         {
-          "id": "f0dc9d8b-2154-4c01-a14f-b7cfd2a94e97",
+          "id": "13e2746c-6ea8-4d96-8234-03319b11c174",
           "img": null,
           "username": "Dan",
           "time": "3:52 PM",
-          "msg": "<blockquote>\n<p>When did you start learning functional programming? Could you recommend any language to get start with?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "bac70ef1-ae8b-4144-b196-5bcfe139db54",
-          "img": null,
-          "username": "Dan",
-          "time": "3:52 PM",
-          "msg": "<p>I think I started with an esoteric language nobody uses (<a href=\"http://nemerle.org/)\">http://nemerle.org/)</a>. Doesn&#39;t really matter, JS is fine</p>\n"
+          "msg": "<blockquote>\n<p>When did you start learning functional programming? Could you recommend any language to get start with?</p>\n</blockquote>\n<p>I think I started with an esoteric language nobody uses (<a href=\"http://nemerle.org/)\">http://nemerle.org/)</a>. Doesn&#39;t really matter, JS is fine</p>\n"
         }
       ]
     },
     {
-      "id": "08cd5917-6e47-456d-860e-ad612dacb5de",
+      "id": "b4fad6c2-5875-4003-9d10-9e8910221d77",
       "img": null,
       "username": "leolopes",
       "time": "3:42 PM",
       "msg": "<p>In the scope of react-native, what do you consider the must-have skills to be considered a good react-native programmer?</p>\n",
       "messages": [
         {
-          "id": "70817e1c-dfda-4b78-b32f-760f7c8a5d17",
+          "id": "88df5bc6-8fd4-45a2-b54f-e045ead8ffb0",
           "img": null,
           "username": "Dan",
           "time": "3:53 PM",
-          "msg": "<blockquote>\n<p>In the scope of react-native, what do you consider the must-have skills to be considered a good react-native programmer?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "c1f1afc9-5770-41ed-8503-cd499f78377b",
-          "img": null,
-          "username": "Dan",
-          "time": "3:53 PM",
-          "msg": "<p>I don&#39;t know, make apps that look and behave well?</p>\n"
+          "msg": "<blockquote>\n<p>In the scope of react-native, what do you consider the must-have skills to be considered a good react-native programmer?</p>\n</blockquote>\n<p>I don&#39;t know, make apps that look and behave well?</p>\n"
         }
       ]
     },
     {
-      "id": "77e610de-0a0f-4354-8ae1-96a10edf1df6",
+      "id": "79e4c992-66c1-4d0c-94ca-1dc8ed18b282",
       "img": null,
       "username": "guilherme_vasconcelos",
       "time": "3:46 PM",
       "msg": "<p>What are the topics you suggest developers - involved with React and its ecosystem - to focus on studying in order to be prepared for the future or next years?</p>\n",
       "messages": [
         {
-          "id": "cffa04ce-289e-48bc-a71d-bafd7889324b",
+          "id": "3235d6bf-09b5-40f0-aaaa-9a474c1aa6e9",
           "img": null,
           "username": "Dan",
           "time": "3:53 PM",
-          "msg": "<blockquote>\n<p>What are the topics you suggest developers - involved with React and its ecosystem - to focus on studying in order to be prepared for the future or next years?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "0dae4a7d-ef15-4f11-bf6e-c82888c78338",
-          "img": null,
-          "username": "Dan",
-          "time": "3:53 PM",
-          "msg": "<p>Immutability</p>\n"
+          "msg": "<blockquote>\n<p>What are the topics you suggest developers - involved with React and its ecosystem - to focus on studying in order to be prepared for the future or next years?</p>\n</blockquote>\n<p>Immutability</p>\n"
         }
       ]
     },
     {
-      "id": "22fbd93a-f1a1-4523-9ee7-1f7840e542a6",
+      "id": "9a731506-d260-43bc-a244-4f4396c3792b",
       "img": null,
       "username": "sibelius",
       "time": "3:53 PM",
       "msg": "<blockquote>\n<p>which books changed your life?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "286508c8-17bb-415b-b349-e445fa10ddf2",
+          "id": "8b65220a-2616-450f-9bf6-dfd25bf65d5c",
           "img": null,
           "username": "Dan",
           "time": "3:54 PM",
-          "msg": "<blockquote>\n<p>which books changed your life?</p>\n</blockquote>\n"
-        },
-        {
-          "id": "a76e83a4-701c-4bdb-bc6f-6e84787778c6",
-          "img": null,
-          "username": "Dan",
-          "time": "3:54 PM",
-          "msg": "<p><a href=\"https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359\">https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359</a></p>\n"
+          "msg": "<blockquote>\n<p>which books changed your life?</p>\n</blockquote>\n<p><a href=\"https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359\">https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359</a></p>\n"
         }
       ]
     },
     {
-      "id": "636ecdb5-7899-48e3-8e2a-24ef993e528c",
+      "id": "3449635d-8572-4fc9-b28d-c80c13de665b",
       "img": null,
       "username": "Jabur",
       "time": "3:55 PM",
       "msg": "<p>Hey @Dan thank you so much for your time, i`m pretty sure everybody really loved your answers.</p>\n",
       "messages": [
         {
-          "id": "29f7eb8b-52e0-488b-83ad-318e01f2ab49",
+          "id": "3cb36fb8-b4d1-4ffb-be33-af966b76dd52",
           "img": null,
           "username": "Jabur",
           "time": "3:55 PM",
-          "msg": "<p>I only have one more question and one invite:</p>\n"
+          "msg": "<p>I only have one more question and one invite:</p>\n<p>1 - Can you point to three other people to the next Q/A Session!</p>\n<p>2 - And: Any chances to come to React Conf Brazil? :flag-br:</p>\n"
         },
         {
-          "id": "e6e986fc-7f88-443e-9c3f-0f054c209ea2",
-          "img": null,
-          "username": "Jabur",
-          "time": "3:55 PM",
-          "msg": "<p>1 - Can you point to three other people to the next Q/A Session!</p>\n"
-        },
-        {
-          "id": "8360f946-c381-4614-8575-e3d837c6bd8d",
-          "img": null,
-          "username": "Jabur",
-          "time": "3:55 PM",
-          "msg": "<p>2 - And: Any chances to come to React Conf Brazil? :flag-br:</p>\n"
-        },
-        {
-          "id": "ef4cfb85-95fa-4b80-90f4-38ddc87f26b6",
+          "id": "6a357a1a-6923-44c8-8401-5a5dc6c69030",
           "img": null,
           "username": "Dan",
           "time": "3:57 PM",
-          "msg": "<p>Re (2): not very likely because I don&#39;t do many talks so I don&#39;t even know when the next one is going to be</p>\n"
+          "msg": "<p>Re (2): not very likely because I don&#39;t do many talks so I don&#39;t even know when the next one is going to be</p>\n<p>(1): in React ecosystem?</p>\n"
         },
         {
-          "id": "bafa98dd-6f88-45b2-a220-1e7fbbbe9e26",
-          "img": null,
-          "username": "Dan",
-          "time": "3:57 PM",
-          "msg": "<p>(1): in React ecosystem?</p>\n"
-        },
-        {
-          "id": "045412cb-40c4-4876-a788-42102e4e9796",
+          "id": "514f6ed9-738c-40b6-8448-b9fae7f95daf",
           "img": null,
           "username": "Jabur",
           "time": "3:58 PM",
           "msg": "<p>Yes, please</p>\n"
         },
         {
-          "id": "4681cd49-769c-48c7-a643-cdcf40c7c263",
+          "id": "c1278f47-d4de-4a6d-9e9a-7c7585ab4755",
           "img": null,
           "username": "Dan",
           "time": "4:01 PM",
-          "msg": "<p>my teammate</p>\n"
+          "msg": "<p>my teammate</p>\n<p><a href=\"https://mobile.twitter.com/ProvablyFlarnie\">https://mobile.twitter.com/ProvablyFlarnie</a></p>\n<p>my manager</p>\n<p><a href=\"https://mobile.twitter.com/sophiebits\">https://mobile.twitter.com/sophiebits</a></p>\n<p>cool folks I&#39;ve learned from</p>\n<p><a href=\"https://mobile.twitter.com/NikkitaFTW\">https://mobile.twitter.com/NikkitaFTW</a></p>\n<p><a href=\"https://mobile.twitter.com/rwieruch\">https://mobile.twitter.com/rwieruch</a></p>\n<p><a href=\"https://mobile.twitter.com/siddharthkp\">https://mobile.twitter.com/siddharthkp</a></p>\n<p><a href=\"https://mobile.twitter.com/peggyrayzis\">https://mobile.twitter.com/peggyrayzis</a></p>\n<p><a href=\"https://mobile.twitter.com/CompuIves\">https://mobile.twitter.com/CompuIves</a></p>\n<p><a href=\"https://mobile.twitter.com/elibelly\">https://mobile.twitter.com/elibelly</a></p>\n<p>sorry it&#39;s not three</p>\n"
         },
         {
-          "id": "ff7619b0-05c3-495a-babe-a7fc8fd2fe32",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/ProvablyFlarnie\">https://mobile.twitter.com/ProvablyFlarnie</a></p>\n"
-        },
-        {
-          "id": "89551957-bb83-4d23-8dc0-f27e77f34049",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p>my manager</p>\n"
-        },
-        {
-          "id": "8a9cd5b6-326f-4992-8ef6-49ac20319d5d",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/sophiebits\">https://mobile.twitter.com/sophiebits</a></p>\n"
-        },
-        {
-          "id": "d5428cad-d268-480f-a75a-b46f38d4efe6",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p>cool folks I&#39;ve learned from</p>\n"
-        },
-        {
-          "id": "26ccafee-7973-4a5e-b256-353fea28ebc8",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/NikkitaFTW\">https://mobile.twitter.com/NikkitaFTW</a></p>\n"
-        },
-        {
-          "id": "c1e5f6c1-c13e-43ec-80de-8dbe291ae125",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/rwieruch\">https://mobile.twitter.com/rwieruch</a></p>\n"
-        },
-        {
-          "id": "4b86c86b-4478-4971-b389-1f55b60813e1",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/siddharthkp\">https://mobile.twitter.com/siddharthkp</a></p>\n"
-        },
-        {
-          "id": "ecefe062-329c-40a5-b928-7cdefe938b6a",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/peggyrayzis\">https://mobile.twitter.com/peggyrayzis</a></p>\n"
-        },
-        {
-          "id": "e7e790e4-5cc1-450a-980a-77e83a1803f1",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/CompuIves\">https://mobile.twitter.com/CompuIves</a></p>\n"
-        },
-        {
-          "id": "806c90eb-5e04-4b92-9fb8-d4b2d76c8e45",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p><a href=\"https://mobile.twitter.com/elibelly\">https://mobile.twitter.com/elibelly</a></p>\n"
-        },
-        {
-          "id": "c1114f8e-28f5-406d-8e7f-54b010df849b",
-          "img": null,
-          "username": "Dan",
-          "time": "4:01 PM",
-          "msg": "<p>sorry it&#39;s not three</p>\n"
-        },
-        {
-          "id": "254bcbef-5bf1-4fce-b498-65293d632968",
+          "id": "2646d0e0-3970-4c6e-ba35-00f4ba50782b",
           "img": null,
           "username": "Jabur",
           "time": "4:01 PM",

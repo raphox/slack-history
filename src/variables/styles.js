@@ -93,7 +93,6 @@ const Aside = styled.aside`
 
     .sb-avatar {
       margin: 0 5px 0 0;
-      line-height: 20px;
     }
   }
 `;

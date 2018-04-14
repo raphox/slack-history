@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
+import { NavLink as Link } from "react-router-dom";
 import styled from 'styled-components';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
 import { Aside } from 'variables/styles';
+
+const ASIDE_MENU_ITEMS = {
+  sessions: [{
+    path: "/channel/dan-abramov-201804",
+    title: "dan-abramov-201804",
+    description: ""
+  }, {
+    path: "/channel/sibelius-201803",
+    title: "sibelius-201803",
+    description: ""
+  }],
+  authors: [{
+    path: "/author/dan-abramov",
+    title: "dan-abramov"
+  }, {
+    path: "/author/sibelius",
+    title: "sibelius"
+  }],
+}
 
 class AsideMenu extends Component {
   render() {
@@ -14,27 +34,23 @@ class AsideMenu extends Component {
           <ol>
             <li>
               <span className="title">Sessions</span>
-              <dl>
-                <a href="#anchor" className="active">
-                  <dt>raphael 2018-03</dt>
-                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-                </a>
-
-                <a href="#anchor">
-                  <dt>raphael 2018-03</dt>
-                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-                </a>
+              <dl className="channels">
+                {ASIDE_MENU_ITEMS.sessions.map((session) =>
+                  <Link to={session.path} key={session.path}>
+                    <dt>{session.title}</dt>
+                    <dd>{session.description}</dd>
+                  </Link>
+                )}
               </dl>
             </li>
             <li>
               <span className="title">Autores</span>
-              <dl>
-                <a href="#anchor" className="active">
-                  <dt>raphael</dt>
-                </a>
-                <a href="#anchor">
-                  <dt>raphael</dt>
-                </a>
+              <dl className="authors">
+                {ASIDE_MENU_ITEMS.authors.map((author) =>
+                  <Link to={author.path} key={author.path}>
+                    <dt>{author.title}</dt>
+                  </Link>
+                )}
               </dl>
             </li>
           </ol>
@@ -53,7 +69,7 @@ export default styled(AsideMenu)`
   h1 {
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 12px 10px 15px;
     margin-bottom: 10px;
     color: #fff;
 
@@ -65,7 +81,8 @@ export default styled(AsideMenu)`
       padding: 5px 0;
 
       &:before {
-        content: "⚫ ";
+        content: "⚫";
+        margin-right: 5px;
         color: #4C9689;
       }
     }
@@ -105,7 +122,13 @@ export default styled(AsideMenu)`
     }
 
     dt:before {
-      content: '# ';
+      content: '#';
+      margin-right: 5px;
+      opacity: 0.6;
+    }
+
+    &.authors dt:before {
+      content: '⚫';
     }
   }
 `;

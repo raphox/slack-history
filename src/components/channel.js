@@ -1,140 +1,82 @@
 import React, { Component } from 'react';
 import Avatar from 'react-avatar';
 import styled from 'styled-components';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { connect } from 'react-redux';
+import { selectSession, fetchSessionIfNeeded } from 'actions';
 
-import { Wrapper, Content, Aside, Header } from 'variables/styles';
+import { Wrapper, Content } from 'variables/styles';
+import Header from 'components/channel-header';
+import Sidebar from 'components/channel-sidebar';
 
 class Channel extends Component {
+  componentDidMount() {
+    const { dispatch, selectedSession } = this.props;
+    dispatch(fetchSessionIfNeeded(selectedSession));
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params.channel !== prevProps.selectedSession && this.props.match.params.channel) {
+      const { dispatch, match } = this.props;
+      dispatch(selectSession(match.params.channel));
+      dispatch(fetchSessionIfNeeded(match.params.channel));
+    }
+  }
+
+  renderMessage(message, question = false) {
+    return (
+      <li className="list_item message" key={message.id}>
+        <div className="gutter">
+          <a href="/team/U777SJDPE" target="_blank" className="avatar">
+            <Avatar name={message.username} size={36} />
+          </a>
+        </div>
+        <div className="content">
+          {question && <FontAwesomeIcon icon="question" size="3x" color="white" pull="right"/>}
+          <div className="content_header">
+            <span className="sender">
+              <a className="sender_link" href="/team/U777SJDPE" target="_blank">{message.username}</a>
+            </span>
+          </div>
+          <span className="body" dangerouslySetInnerHTML={{__html: message.msg}} />
+        </div>
+        { this.renderAnswers(message) }
+      </li>
+    );
+  }
+
+  renderAnswers(question) {
+    if (question.messages && question.messages.length > 0) {
+      return (
+        <ul>
+          { question.messages.map((message) => this.renderMessage(message))}
+        </ul>
+      );
+    }
+  }
+
   render() {
+    const { selectedSession, session, isFetching } = this.props;
+
     return (
       <Wrapper>
-        <Header>
-          <Aside style={{flex: 'auto', border: 'none'}}>
-            <h1>raphael 2018-03</h1>
-            <ul>
-              <li><FontAwesomeIcon icon="user" /> 1,251</li>
-              <li><FontAwesomeIcon icon="thumbtack" /> 1,251</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a tortor et enim euismod bibendum.</li>
-            </ul>
-          </Aside>
-          <Search style={{border: 'none'}}>
-            <FontAwesomeIcon icon="search" color="#a0a0a2" />
-            <input type="text" placeholder="Search" />
-          </Search>
-        </Header>
+        <Header title={selectedSession} session={session} isFetching={isFetching} />
         <Content>
           <Article>
             <PerfectScrollbar>
               <ul className="list">
-                <li className="list_item message">
-                  <div className="gutter">
-                    <a href="/team/U777SJDPE" target="_blank" className="avatar">
-                      <Avatar name="sergiohpreis" size="36px" />
-                    </a>
-                  </div>
-                  <div className="content">
-                    <div className="content_header">
-                      <span className="sender">
-                        <a className="sender_link" href="/team/U777SJDPE" target="_blank">sergiohpreis</a>
-                      </span>
-                    </div>
-                    <span className="body">
-                      Insiro o native no input e boa<br />
-                      <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, magna eget suscipit tincidunt, libero est accumsan lorem, et rhoncus libero turpis vitae lectus. Etiam in nunc et risus aliquam aliquam. Sed et ligula non augue ultrices ullamcorper. Aenean hendrerit risus at ligula vehicula, eu vestibulum velit viverra. Curabitur eu est ullamcorper, tincidunt nisi id, luctus massa.</blockquote>
-                      alguem sabe como indentifico esses casos:
-                    </span>
-                  </div>
-                </li>
-                <li className="list_item message">
-                  <div className="gutter">
-                    <a href="/team/U777SJDPE" target="_blank" className="avatar">
-                    <Avatar name="sergio almeida" size="36px" />
-                    </a>
-                  </div>
-                  <div className="content">
-                    <div className="content_header">
-                      <span className="sender">
-                        <a className="sender_link" href="/team/U777SJDPE" target="_blank">sergiohpreis</a>
-                      </span>
-                    </div>
-                    <span className="body">
-                      Insiro o native no input e boa<br />
-                      <pre>ReactDOM.render(<br />&nbsp;&nbsp;&lt;HelloMessage name=&quot;Taylor&quot; /&gt;,<br />&nbsp;&nbsp;mountNode<br />);</pre>
-                    </span>
-                  </div>
-                </li>
-                <li className="list_item message">
-                  <div className="gutter">
-                    <a href="/team/U777SJDPE" target="_blank" className="avatar">
-                      <Avatar src="https://ca.slack-edge.com/T1EEGNUP4-U777SJDPE-5689266c484e-48" size="36px" />
-                    </a>
-                  </div>
-                  <div className="content">
-                    <div className="content_header">
-                      <span className="sender">
-                        <a className="sender_link" href="/team/U777SJDPE" target="_blank">sergiohpreis</a>
-                      </span>
-                    </div>
-                    <span className="body">
-                      Insiro o native no input e boa<br />
-                      alguem sabe como indentifico <code>React</code> esses casos:
-                    </span>
-                  </div>
-                </li>
+                {!isFetching && session.messages.map((message) => this.renderMessage(message, true))}
               </ul>
             </PerfectScrollbar>
           </Article>
-          <Aside>
-            <PerfectScrollbar>
-              <h2>About #channel</h2>
-
-              <h3><FontAwesomeIcon icon="info-circle" color="#717274" fixedWidth /> Details</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus, magna eget suscipit tincidunt, libero est accumsan lorem, et rhoncus libero turpis vitae lectus. Etiam in nunc et risus aliquam aliquam. Sed et ligula non augue ultrices ullamcorper. Aenean hendrerit risus at ligula vehicula, eu vestibulum velit viverra. Curabitur eu est ullamcorper, tincidunt nisi id, luctus massa. Fusce eu metus vitae nulla pulvinar hendrerit. Mauris porta nulla vitae suscipit imperdiet.</p>
-
-              <h3><FontAwesomeIcon icon="bolt" color="#2d9ee0" fixedWidth /> Hightlights</h3>
-              <ul className="highlights">
-                <li><a href="/tags/react">React (2)</a></li>
-                <li><a href="/tags/react">Node (1)</a></li>
-                <li><a href="/tags/react">Javascript (1)</a></li>
-              </ul>
-
-              <h3><FontAwesomeIcon icon="user" color="#2ea664" fixedWidth /> Members</h3>
-
-              <ul className="list-users">
-                <li><a href="/author/raphox"><Avatar name="raphox" size="20px" />raphox</a></li>
-                <li><a href="/author/raphox"><Avatar name="renato" size="20px" />renato</a></li>
-                <li><a href="/author/raphox"><Avatar name="joao" size="20px" />joao</a></li>
-              </ul>
-            </PerfectScrollbar>
-          </Aside>
+          <Sidebar title={selectedSession} session={session} isFetching={isFetching} />
         </Content>
       </Wrapper>
     );
   }
 }
-
-const Search = Aside.extend`
-  position: relative;
-
-  svg {
-    position: absolute;
-    top: 12px;
-    left: 10px;
-  }
-
-  input {
-    padding: 2px 12px 2px 30px;
-    display: flex;
-    height: 35px;
-    width: 365px;
-    border-radius: 3px;
-    border: 1px solid #a0a0a2;
-    font-family: 'Font Awesome 5 Free', 'Lato', sans-serif;
-  }
-`;
 
 const Article = styled.article`
   flex-flow: row wrap;
@@ -188,12 +130,25 @@ const Article = styled.article`
   ul.list {
     margin: 12px 0 45px 0;
 
+    &> li {
+      padding-top: 20px !important;
+    }
+
     li.list_item.message {
       font-size: 15px;
       padding: 6px 20px 6px 6px;
 
+      ul {
+        margin: 26px -20px -6px -6px;
+        border-bottom: 1px dashed #e8e8e8;
+      }
+
       &:hover {
         background-color: #f5f5f5;
+
+        ul {
+          background-color: #fff;
+        }
       }
 
       .gutter {
@@ -201,10 +156,6 @@ const Article = styled.article`
         padding-right: 8px;
         float: left;
         text-align: right;
-
-        .sb-avatar {
-          line-height: 36px;
-        }
       }
 
       .content {
@@ -224,4 +175,23 @@ const Article = styled.article`
   }
 `;
 
-export default Channel;
+function mapStateToProps(state) {
+  const { selectedSession, sessionByTitle } = state
+  const {
+    isFetching,
+    lastUpdated,
+    data: session
+  } = sessionByTitle[selectedSession] || {
+    isFetching: true,
+    data: []
+  }
+
+  return {
+    selectedSession,
+    session,
+    isFetching,
+    lastUpdated
+  }
+}
+
+export default connect(mapStateToProps)(Channel);

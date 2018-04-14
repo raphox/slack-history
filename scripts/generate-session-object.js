@@ -79,20 +79,34 @@ if (!args.options.path) {
           } else {
             highlights_terms(message, obj.info.highlights);
 
-            obj.messages[j].messages.push({
-              id: uuid(),
-              img: null,
-              username: author,
-              time: time,
-              msg: marked(message.trim())
-            });
+            let last_message = obj.messages[j].messages[obj.messages[j].messages.length - 1];
+
+            if (!last_message || last_message.username != author) {
+              obj.messages[j].messages.push({
+                id: uuid(),
+                img: null,
+                username: author,
+                time: time,
+                msg: marked(message.trim())
+              });
+            } else {
+              last_message.msg += marked(message.trim());
+            }
           }
         } else {
           j++;
         }
       }
 
-      obj.info.authors = Object.keys(obj.info.authors);
+      obj.info.authors = Object.keys(obj.info.authors).sort();
+      obj.info.highlights = Object.keys(obj.info.highlights)
+        .sort((a, b) => {
+          return obj.info.highlights[b] - obj.info.highlights[a]
+        })
+        .reduce((a, v) => {
+          a[v] = obj.info.highlights[v];
+          return a;
+        }, {});
 
       jsonfile.writeFileSync(path.join(destination, path.basename(file_path, '.txt') + '.json'), obj, { spaces: 2 });
     });
