@@ -39,7 +39,7 @@ function fetchSession(title) {
   return dispatch => {
     dispatch(requestSession(title))
 
-    return fetch(`/sessions/${title}.json`)
+    return fetch(`${process.env.PUBLIC_URL}/sessions/${title}.json`)
       .then(response => response.json())
       .then(json => dispatch(receiveSession(title, json)))
   }

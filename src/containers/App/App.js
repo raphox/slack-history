@@ -13,7 +13,7 @@ import Author from 'components/author';
 class App extends Component {
   render() {
     return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Wrapper>
           <Content>
             <AsideMenu />
