@@ -4,6 +4,7 @@ const path = require('path');
 const readline = require('readline');
 const jsonfile = require('jsonfile');
 const marked = require('marked');
+const emoji = require('emoji-js');
 const uuid = require('uuid/v4');
 
 const options = [{
@@ -72,12 +73,12 @@ if (!args.options.path) {
                 img: null,
                 username: author,
                 time: time,
-                msg: marked(messages[++i].trim()),
+                msg: convertMessage(messages[++i].trim()),
                 messages: []
               };
             }
           } else {
-            highlights_terms(message, obj.info.highlights);
+            highlightsTerms(message, obj.info.highlights);
 
             let last_message = obj.messages[j].messages[obj.messages[j].messages.length - 1];
 
@@ -87,10 +88,10 @@ if (!args.options.path) {
                 img: null,
                 username: author,
                 time: time,
-                msg: marked(message.trim())
+                msg: convertMessage(message.trim())
               });
             } else {
-              last_message.msg += marked(message.trim());
+              last_message.msg += convertMessage(message.trim());
             }
           }
         } else {
@@ -100,9 +101,7 @@ if (!args.options.path) {
 
       obj.info.authors = Object.keys(obj.info.authors).sort();
       obj.info.highlights = Object.keys(obj.info.highlights)
-        .sort((a, b) => {
-          return obj.info.highlights[b] - obj.info.highlights[a]
-        })
+        .sort((a, b) => obj.info.highlights[b] - obj.info.highlights[a])
         .reduce((a, v) => {
           a[v] = obj.info.highlights[v];
           return a;
@@ -116,16 +115,74 @@ if (!args.options.path) {
 }
 
 /**
+ * Convert markdown message to HTML
+ */
+const emojiConvertor = new emoji.EmojiConvertor();
+emojiConvertor.replace_mode = 'unified';
+emojiConvertor.allow_native = true;
+const convertMessage = (message) => emojiConvertor.replace_colons(marked(message.trim()));
+
+/**
  * Process the message and count the times a important word occurs
  *
  * @param {string} message
  * @param {object} highlights
  */
-const highlights_terms = (message, highlights = {}) => {
-  const terms = ["react", "redux", "pacote", "package", "github", "bitbucket", "repositorio", "repository", "native", "mobile", "desktop", "ios", "android", "windows", "linux", "web", "animations", "cocoapod", "gradle", "open source", "async", "apollo", "relay", "graphql", "meteor", "styled", "components", "backend", "frontend", "fullstack", "form", "ui", "ux", "css", "typescript", "babel", "thread", "jsx", "reasonml", "ssr", "spa", "pwa", "book"];
+const highlightsTerms = (message, highlights = {}) => {
+  const terms = [
+    ["android"],
+    ["animation", "animations", "animação", "animações"],
+    ["apollo"],
+    ["async"],
+    ["babel"],
+    ["backend"],
+    ["bitbucket"],
+    ["book", "books", "livro", "livros"],
+    ["cocoapod"],
+    ["component", "components", "componente", "componentes"],
+    ["css"],
+    ["desktop"],
+    ["flow"],
+    ["form"],
+    ["frontend"],
+    ["fullstack"],
+    ["git"],
+    ["github"],
+    ["gradle"],
+    ["graphql"],
+    ["ios"],
+    ["jsx"],
+    ["linux"],
+    ["meteor"],
+    ["mobile"],
+    ["native"],
+    ["open source"],
+    ["package", "packages", "pacote", "pacotes"],
+    ["pwa"],
+    ["react"],
+    ["reasonml"],
+    ["redux"],
+    ["relay"],
+    ["repository", "repositories", "repositorio", "repositorios"],
+    ["spa"],
+    ["ssr"],
+    ["styled", "styleds", "estilo", "estilos"],
+    ["sync"],
+    ["typescript"],
+    ["ui"],
+    ["ux"],
+    ["web"],
+    ["windows"],
+  ];
 
-  for (let term of terms) {
-    let count = message.toLowerCase().split(term).length - 1 + (highlights[term] || 0);
-    if (count > 0) highlights[term] = count;
+  for (let synonymous of terms) {
+    let count = highlights[synonymous[0]] || 0;
+    debugger;
+
+    for (let term of synonymous) {
+      count += message.toLowerCase().split(` ${term} `).length - 1;
+    }
+
+    if (count > 0) highlights[synonymous[0]] = count;
   }
 };

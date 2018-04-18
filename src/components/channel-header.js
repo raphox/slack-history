@@ -1,11 +1,48 @@
 import React, { Component } from 'react';
+import qstring from 'query-string';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+
+import { connect } from 'react-redux';
+import { filterSessionMessages } from 'actions';
 
 import { Aside, Header } from 'variables/styles';
 
 class ChannelHeader extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      search: ''
+    }
+  }
+
+  handlerQuery = () => {
+    const query = qstring.parse(this.props.location.search);
+
+    if (query && query.highlight) {
+      this.setState({
+        search: `#${query.highlight}`
+      });
+    }
+
+    if (this.props.index && this.state.search) {
+      const str = this.state.search.replace(/^(#|@)/, '');
+      this.props.dispatch(filterSessionMessages(this.props.title, this.props.session, str, this.props.index));
+    }
+  }
+
+  componentDidMount() {
+    this.handlerQuery();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.handlerQuery();
+    }
+  }
+
   render() {
-    const {title, session, isFetching} = this.props;
+    const { title, session, isFetching} = this.props;
 
     return (
       <Header>
@@ -20,7 +57,7 @@ class ChannelHeader extends Component {
         </Aside>
         <Search style={{border: 'none'}}>
           <FontAwesomeIcon icon="search" color="#a0a0a2" />
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" value={this.state.search} />
         </Search>
       </Header>
     );
@@ -47,4 +84,4 @@ const Search = Aside.extend`
   }
 `;
 
-export default ChannelHeader;
+export default connect()(ChannelHeader);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import '@fortawesome/fontawesome-free-solid';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
@@ -18,7 +18,7 @@ class App extends Component {
           <Content>
             <AsideMenu />
             <Switch>
-              <Route exact path='/' component={Channel}/>
+              <Redirect exact from='/' to="/channel/dan-abramov-201804"/>
               <Route path='/channel/:channel' component={Channel}/>
               <Route path='/author/:author' component={Author}/>
             </Switch>

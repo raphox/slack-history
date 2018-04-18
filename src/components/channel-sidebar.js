@@ -22,7 +22,7 @@ class ChannelSidebar extends Component {
             <h3><FontAwesomeIcon icon="bolt" color="#2d9ee0" fixedWidth /> Hightlights</h3>
             <ul className="highlights">
               {Object.keys(session.info.highlights).map((key) =>
-                <li key={key}><Link to={`/channel/${title}#${key}`}>{key} ({session.info.highlights[key]})</Link></li>
+                <li key={key}><Link to={`/channel/${title}?highlight=${key}`}>{key} ({session.info.highlights[key]})</Link></li>
               )}
             </ul>
 

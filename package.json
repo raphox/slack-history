@@ -8,6 +8,8 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.9",
     "@fortawesome/react-fontawesome": "0.0.18",
     "cross-fetch": "^2.1.0",
+    "elasticlunr": "^0.9.5",
+    "query-string": "^6.0.0",
     "react": "^16.3.1",
     "react-avatar": "^2.5.1",
     "react-dom": "^16.3.1",
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "argv": "0.0.2",
+    "emoji-js": "^3.4.0",
     "gh-pages": "^1.1.0",
     "jsonfile": "^4.0.0",
     "marked": "^0.3.19",

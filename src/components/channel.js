@@ -13,12 +13,12 @@ import Sidebar from 'components/channel-sidebar';
 
 class Channel extends Component {
   componentDidMount() {
-    const { dispatch, selectedSession } = this.props;
-    dispatch(fetchSessionIfNeeded(selectedSession));
+    const { dispatch } = this.props;
+    dispatch(fetchSessionIfNeeded(this.props.match.params.channel));
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.match.params.channel !== prevProps.selectedSession && this.props.match.params.channel) {
+    if (this.props.match.params.channel !== prevProps.title && this.props.match.params.channel) {
       const { dispatch, match } = this.props;
       dispatch(selectSession(match.params.channel));
       dispatch(fetchSessionIfNeeded(match.params.channel));
@@ -58,11 +58,11 @@ class Channel extends Component {
   }
 
   render() {
-    const { selectedSession, session, isFetching } = this.props;
+    const { session, isFetching } = this.props;
 
     return (
       <Wrapper>
-        <Header title={selectedSession} session={session} isFetching={isFetching} />
+        <Header {...this.props} />
         <Content>
           <Article>
             <PerfectScrollbar>
@@ -71,7 +71,7 @@ class Channel extends Component {
               </ul>
             </PerfectScrollbar>
           </Article>
-          <Sidebar title={selectedSession} session={session} isFetching={isFetching} />
+          <Sidebar {...this.props} />
         </Content>
       </Wrapper>
     );
@@ -176,19 +176,21 @@ const Article = styled.article`
 `;
 
 function mapStateToProps(state) {
-  const { selectedSession, sessionByTitle } = state
+  const { selectedSession: title, sessionByTitle } = state
   const {
     isFetching,
     lastUpdated,
-    data: session
-  } = sessionByTitle[selectedSession] || {
+    data: session,
+    index
+  } = sessionByTitle[title] || {
     isFetching: true,
     data: []
   }
 
   return {
-    selectedSession,
+    title,
     session,
+    index,
     isFetching,
     lastUpdated
   }
