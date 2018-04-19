@@ -56,30 +56,32 @@ if (!args.options.path) {
 
       for (let i = 0; i < messages.length; i++) {
         message = messages[i];
+        const highlights = highlightsTerms(message, obj.info.highlights);
 
         if (message != '---') {
           last_message = messages[i - 1];
           data_match = regex.exec(message);
 
           if (data_match) {
-            author = data_match[1].trim();
+            author = data_match[1].replace("@", '').trim();
             time = data_match[2].trim();
 
             obj.info.authors[author] = true;
 
             if (!last_message || last_message == '---') {
+              message = messages[++i];
+
               obj.messages[j] = {
                 id: uuid(),
                 img: null,
                 username: author,
                 time: time,
-                msg: convertMessage(messages[++i].trim()),
-                messages: []
+                msg: convertMessage(message.trim()),
+                messages: [],
+                highlights: highlightsTerms(message, {})
               };
             }
           } else {
-            highlightsTerms(message, obj.info.highlights);
-
             let last_message = obj.messages[j].messages[obj.messages[j].messages.length - 1];
 
             if (!last_message || last_message.username != author) {
@@ -88,10 +90,12 @@ if (!args.options.path) {
                 img: null,
                 username: author,
                 time: time,
-                msg: convertMessage(message.trim())
+                msg: convertMessage(message.trim()),
+                highlights: highlightsTerms(message, {})
               });
             } else {
               last_message.msg += convertMessage(message.trim());
+              last_message.highlights = highlightsTerms(last_message.msg, {});
             }
           }
         } else {
@@ -151,6 +155,7 @@ const highlightsTerms = (message, highlights = {}) => {
     ["gradle"],
     ["graphql"],
     ["ios"],
+    ["javascrip", "js"],
     ["jsx"],
     ["linux"],
     ["meteor"],
@@ -175,14 +180,23 @@ const highlightsTerms = (message, highlights = {}) => {
     ["windows"],
   ];
 
+  let collection = {};
+
   for (let synonymous of terms) {
     let count = highlights[synonymous[0]] || 0;
-    debugger;
 
     for (let term of synonymous) {
-      count += message.toLowerCase().split(` ${term} `).length - 1;
+      let re = new RegExp(` ${term}\\W`);
+      let total = message.toLowerCase().split(re).length - 1;
+
+      if (total > 0) count += total;
     }
 
-    if (count > 0) highlights[synonymous[0]] = count;
+    if (count > 0) {
+      highlights[synonymous[0]] = count;
+      for (let term of synonymous) collection[term] = true;
+    }
   }
+
+  return Object.keys(collection).join(' ');
 };

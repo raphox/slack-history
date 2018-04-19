@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Avatar from 'react-avatar';
 import styled from 'styled-components';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
 import { connect } from 'react-redux';
-import { selectSession, fetchSessionIfNeeded } from 'actions';
+import { selectSession, fetchSessionIfNeeded, filterSessionMessages } from 'actions';
 
 import { Wrapper, Content } from 'variables/styles';
 import Header from 'components/channel-header';
 import Sidebar from 'components/channel-sidebar';
 
 class Channel extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      search: '',
+      selectedHighlights: [],
+      selectedAuthors: []
+    }
+  }
+
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(fetchSessionIfNeeded(this.props.match.params.channel));
@@ -20,30 +31,65 @@ class Channel extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.match.params.channel !== prevProps.title && this.props.match.params.channel) {
       const { dispatch, match } = this.props;
-      dispatch(selectSession(match.params.channel));
       dispatch(fetchSessionIfNeeded(match.params.channel));
+      dispatch(selectSession(match.params.channel));
+
+      this.setState({
+        search: '',
+        selectedHighlights: [],
+        selectedAuthors: []
+      });
+
+      this.handlerFilter('');
     }
   }
 
-  renderMessage(message, question = false) {
+  handlerClickMessage = (scrollTop) => {
+    this.refs.contentScroll._container.scrollTop = scrollTop;
+  }
+
+  handlerFilter = (str) => {
+    this.setState({
+      search: '',
+      selectedHighlights: [],
+      selectedAuthors: []
+    }, () => {
+      let _str = String(str).replace(/^#|@/, '');
+
+      if (str && str[0] === '#') this.setState({ selectedHighlights: [_str] });
+      if (str && str[0] === '@') this.setState({ selectedAuthors: [_str] });
+
+      this.setState({ search: str }, () => {
+        const { title, session, index, dispatch } = this.props;
+        dispatch(filterSessionMessages(title, session, str, index));
+      });
+    });
+  }
+
+  render() {
+    const { session, isFetching } = this.props;
+
     return (
-      <li className="list_item message" key={message.id}>
-        <div className="gutter">
-          <a href="/team/U777SJDPE" target="_blank" className="avatar">
-            <Avatar name={message.username} size={36} />
-          </a>
-        </div>
-        <div className="content">
-          {question && <FontAwesomeIcon icon="question" size="3x" color="white" pull="right"/>}
-          <div className="content_header">
-            <span className="sender">
-              <a className="sender_link" href="/team/U777SJDPE" target="_blank">{message.username}</a>
-            </span>
-          </div>
-          <span className="body" dangerouslySetInnerHTML={{__html: message.msg}} />
-        </div>
-        { this.renderAnswers(message) }
-      </li>
+      <Wrapper>
+        <Header {...this.props}
+          search={this.state.search}
+          onClickFilter={this.handlerFilter} />
+        <Content>
+          <Article>
+            <PerfectScrollbar ref="contentScroll">
+              <ul className="list">
+                {!isFetching && session.messages.map((message) => this.renderMessage(message, true))}
+              </ul>
+            </PerfectScrollbar>
+          </Article>
+          <Sidebar {...this.props }
+            search={this.state.search}
+            selectedHighlights={this.state.selectedHighlights}
+            selectedAuthors={this.state.selectedAuthors}
+            onClickMessage={this.handlerClickMessage}
+            onClickFilter={this.handlerFilter} />
+        </Content>
+      </Wrapper>
     );
   }
 
@@ -57,23 +103,25 @@ class Channel extends Component {
     }
   }
 
-  render() {
-    const { session, isFetching } = this.props;
-
+  renderMessage(message, question = false) {
     return (
-      <Wrapper>
-        <Header {...this.props} />
-        <Content>
-          <Article>
-            <PerfectScrollbar>
-              <ul className="list">
-                {!isFetching && session.messages.map((message) => this.renderMessage(message, true))}
-              </ul>
-            </PerfectScrollbar>
-          </Article>
-          <Sidebar {...this.props} />
-        </Content>
-      </Wrapper>
+      <li className="list_item message" key={message.id} id={message.id}>
+        <div className="gutter">
+          <Link to={`/author/${message.username}`}>
+            <Avatar name={message.username} size={36} />
+          </Link>
+        </div>
+        <div className="content">
+          {question && <FontAwesomeIcon icon="question" size="3x" color="white" pull="right"/>}
+          <div className="content_header">
+            <span className="sender">
+              <Link to={`/author/${message.username}`}>{message.username}</Link>
+            </span>
+          </div>
+          <span className="body" dangerouslySetInnerHTML={{__html: message.msg}} />
+        </div>
+        { this.renderAnswers(message) }
+      </li>
     );
   }
 }

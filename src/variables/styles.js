@@ -50,16 +50,32 @@ const Aside = styled.aside`
     line-height:1.46668;
   }
 
-  ul.highlights, ul.list-users {
+  ul.highlights,
+  ul.list-users {
     padding: 0 12px 19px 12px;
 
     li {
-      padding: 0 0 5px 0;
+      margin: 0 0 2px 0;
 
-      &:before {
-        content: "⚫";
-        color: #717274;
-        margin: 0 10px 0 0;
+      a {
+        &:before {
+          content: "⚫";
+          color: #717274;
+          margin: 0 10px 0 5px;
+        }
+
+        padding: 5px;
+        margin-left: -5px;
+        display: block;
+
+        &:hover,
+        &.active {
+          padding: 4px;
+          background-color: #eaf5fc;
+          border: 1px solid #cbe7f7;
+          border-radius: 3px;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -72,22 +88,10 @@ const Aside = styled.aside`
     li {
       padding: 0;
 
-      &:before {
-        content: none;
-      }
-    }
-
-    a {
-      padding: 5px;
-      margin-left: -5px;
-      display: block;
-
-      &:hover {
-        padding: 4px;
-        background-color: #eaf5fc;
-        border: 1px solid #cbe7f7;
-        border-radius: 3px;
-        text-decoration: none;
+      a {
+        &:before {
+          content: none;
+        }
       }
     }
 

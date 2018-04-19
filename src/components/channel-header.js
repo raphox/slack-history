@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import qstring from 'query-string';
+import _ from 'lodash';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import { connect } from 'react-redux';
-import { filterSessionMessages } from 'actions';
 
 import { Aside, Header } from 'variables/styles';
 
@@ -16,29 +15,24 @@ class ChannelHeader extends Component {
     }
   }
 
-  handlerQuery = () => {
-    const query = qstring.parse(this.props.location.search);
-
-    if (query && query.highlight) {
-      this.setState({
-        search: `#${query.highlight}`
-      });
-    }
-
-    if (this.props.index && this.state.search) {
-      const str = this.state.search.replace(/^(#|@)/, '');
-      this.props.dispatch(filterSessionMessages(this.props.title, this.props.session, str, this.props.index));
-    }
-  }
-
-  componentDidMount() {
-    this.handlerQuery();
+  componentWillMount() {
+    this.delayedCallback = _.debounce(() => {
+      this.props.onClickFilter(this.state.search);
+    }, 1000);
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      this.handlerQuery();
+    if (this.props.search !== prevProps.search) {
+      this.setState({
+        search: this.props.search
+      });
     }
+  }
+
+  handlerKeyPressSearch = (event) => {
+    this.setState({ search: event.target.value }, () => {
+      this.delayedCallback();
+    });
   }
 
   render() {
@@ -57,7 +51,9 @@ class ChannelHeader extends Component {
         </Aside>
         <Search style={{border: 'none'}}>
           <FontAwesomeIcon icon="search" color="#a0a0a2" />
-          <input type="text" placeholder="Search" value={this.state.search} />
+          <input type="text" placeholder="Search"
+            value={this.state.search}
+            onChange={this.handlerKeyPressSearch} />
         </Search>
       </Header>
     );

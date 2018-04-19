@@ -39,22 +39,21 @@ function sessions(
     case RECEIVE_SESSION:
       const index = elasticlunr(function () {
         this.addField('username');
-        this.addField('message');
+        this.addField('msg');
+        this.addField('highlights');
         this.setRef('id');
       });
 
-      index.addDoc({
-        id: action.session.id,
-        username: action.session.username,
-        message: action.session.msg,
-      });
-
       for (let message of action.session.messages) {
-        index.addDoc({
-          id: message.id,
-          username: message.username,
-          message: message.msg,
-        });
+        const maxlenght = 100;
+
+        let msg = (message.msg.length > maxlenght) ? message.msg.substr(0, maxlenght-1) + '&hellip;' : message.msg;
+        index.addDoc({...message, msg});
+
+        for (let answer of message.messages) {
+          let msg = (answer.msg.length > maxlenght) ? answer.msg.substr(0, maxlenght-1) + '&hellip;' : answer.msg;
+          index.addDoc({...answer, msg});
+        }
       }
 
       return { ...state,
@@ -65,12 +64,19 @@ function sessions(
         lastUpdated: action.receivedAt
       };
     case FILTER_SESSION_MESSAGES:
-      if (!action.str || !action.session) return state;
+      if (!action.index) return state;
 
       let session = { ...action.session };
-      let founds = action.index.search(action.str);
+      let founds = action.str ? action.index.search(action.str) : [];
+      const docs = action.index.documentStore.docs;
 
-      session.resultSearch = session.messages.filter((i) => founds.filter((j) => j.ref === i.id).length > 0);
+      session.resultSearch = Object.keys(docs).filter((i) => {
+        const item = docs[i];
+        return founds.filter((j) => j.ref === item.id).length > 0
+      }).reduce((collection, key) => {
+        collection.push(docs[key]);
+        return collection;
+      }, []);
 
       return { ...state,
         data: session,
