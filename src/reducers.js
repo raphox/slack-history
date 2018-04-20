@@ -67,9 +67,10 @@ function sessions(
       if (!action.index) return state;
 
       let session = { ...action.session };
-      let founds = action.str ? action.index.search(action.str) : [];
+      const founds = action.str ? action.index.search(action.str) : [];
       const docs = action.index.documentStore.docs;
 
+      // filter messages by ID from index search and convert `Object` to `Array`
       session.resultSearch = Object.keys(docs).filter((i) => {
         const item = docs[i];
         return founds.filter((j) => j.ref === item.id).length > 0

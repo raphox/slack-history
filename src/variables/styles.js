@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       text-decoration: underline;
@@ -89,6 +90,8 @@ const Aside = styled.aside`
       padding: 0;
 
       a {
+        line-height: 19px;
+
         &:before {
           content: none;
         }
@@ -97,6 +100,7 @@ const Aside = styled.aside`
 
     .sb-avatar {
       margin: 0 5px 0 0;
+      float: left;
     }
   }
 `;

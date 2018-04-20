@@ -73,6 +73,7 @@ class Channel extends Component {
       <Wrapper>
         <Header {...this.props}
           search={this.state.search}
+          contentScroll={this.refs.contentScroll}
           onClickFilter={this.handlerFilter} />
         <Content>
           <Article>

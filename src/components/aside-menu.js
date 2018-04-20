@@ -89,7 +89,7 @@ export default styled(AsideMenu)`
   }
 
   .title, a {
-    padding: 0 12px 5px 15px;
+    padding: 0 12px 0 15px;
   }
 
   a {

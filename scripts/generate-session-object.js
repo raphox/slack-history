@@ -27,6 +27,8 @@ if (!args.options.path) {
     console.log('File found.');
 
     const destination = "./public/sessions";
+    const destination_path = path.join(destination, path.basename(file_path, '.txt') + '.json');
+
     !fs.existsSync(destination) && fs.mkdirSync(destination);
 
     let obj = {
@@ -56,9 +58,10 @@ if (!args.options.path) {
 
       for (let i = 0; i < messages.length; i++) {
         message = messages[i];
-        const highlights = highlightsTerms(message, obj.info.highlights);
 
         if (message != '---') {
+          const highlights = highlightsTerms(message, obj.info.highlights);
+
           last_message = messages[i - 1];
           data_match = regex.exec(message);
 
@@ -78,7 +81,7 @@ if (!args.options.path) {
                 time: time,
                 msg: convertMessage(message.trim()),
                 messages: [],
-                highlights: highlightsTerms(message, {})
+                highlights: highlights
               };
             }
           } else {
@@ -91,7 +94,7 @@ if (!args.options.path) {
                 username: author,
                 time: time,
                 msg: convertMessage(message.trim()),
-                highlights: highlightsTerms(message, {})
+                highlights: highlights
               });
             } else {
               last_message.msg += convertMessage(message.trim());
@@ -103,7 +106,12 @@ if (!args.options.path) {
         }
       }
 
+      // Get ordened list of authors from all messages
+      // Eg: [ "raphox", "sebelius" ]
       obj.info.authors = Object.keys(obj.info.authors).sort();
+
+      // Get ordened list of highlights with count from all messages.
+      // Eg: { react: 10, native: 5 }
       obj.info.highlights = Object.keys(obj.info.highlights)
         .sort((a, b) => obj.info.highlights[b] - obj.info.highlights[a])
         .reduce((a, v) => {
@@ -111,7 +119,7 @@ if (!args.options.path) {
           return a;
         }, {});
 
-      jsonfile.writeFileSync(path.join(destination, path.basename(file_path, '.txt') + '.json'), obj, { spaces: 2 });
+      jsonfile.writeFileSync(destination_path, obj, { spaces: 2 });
     });
   } else {
     console.log("Error: File in 'path' not found.");
@@ -184,15 +192,17 @@ const highlightsTerms = (message, highlights = {}) => {
 
   for (let synonymous of terms) {
     let count = highlights[synonymous[0]] || 0;
+    let total = 0
 
     for (let term of synonymous) {
-      let re = new RegExp(` ${term}\\W`);
-      let total = message.toLowerCase().split(re).length - 1;
+      let re = new RegExp(`\\W${term}\\W`);
+      // using spaces to involve the string to count the extremes
+      total = ` ${message} `.toLowerCase().split(re).length - 1;
 
       if (total > 0) count += total;
     }
 
-    if (count > 0) {
+    if (total > 0) {
       highlights[synonymous[0]] = count;
       for (let term of synonymous) collection[term] = true;
     }

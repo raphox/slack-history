@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import _ from 'lodash';
+import Mark from 'mark.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 import { connect } from 'react-redux';
@@ -26,6 +28,29 @@ class ChannelHeader extends Component {
       this.setState({
         search: this.props.search
       });
+
+      const dom = ReactDOM.findDOMNode(this.props.contentScroll);
+      const instance = new Mark(dom);
+      instance.unmark();
+
+      const term = this.props.search.replace(/^#|@/, '');
+      const focusFirst = () => {
+        try {
+          const scrollTop = dom.querySelector('mark:first-child').offsetTop;
+          this.props.contentScroll._container.scrollTop = scrollTop;
+        } catch (error) {}
+      }
+
+      if (this.props.search.match(/^#|@/)) {
+        let re = new RegExp(`^${term}\\W|\\W${term}$|\\W${term}\\W`, 'i');
+        instance.markRegExp(re, {
+          done: () => focusFirst()
+        });
+      } else {
+        instance.mark(term, {
+          done: () => focusFirst()
+        });
+      }
     }
   }
 
