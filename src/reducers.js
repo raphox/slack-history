@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import elasticlunr from 'elasticlunr';
 import {
   SELECT_SESSION,
   INVALIDATE_SESSION,
@@ -37,50 +36,19 @@ function sessions(
         didInvalidate: false
       };
     case RECEIVE_SESSION:
-      const index = elasticlunr(function () {
-        this.addField('username');
-        this.addField('msg');
-        this.addField('highlights');
-        this.setRef('id');
-      });
-
-      for (let message of action.session.messages) {
-        const maxlenght = 100;
-
-        let msg = (message.msg.length > maxlenght) ? message.msg.substr(0, maxlenght-1) + '&hellip;' : message.msg;
-        index.addDoc({...message, msg});
-
-        for (let answer of message.messages) {
-          let msg = (answer.msg.length > maxlenght) ? answer.msg.substr(0, maxlenght-1) + '&hellip;' : answer.msg;
-          index.addDoc({...answer, msg});
-        }
-      }
-
       return { ...state,
         isFetching: false,
         didInvalidate: false,
         data: action.session,
-        index: index,
+        index: action.index,
         lastUpdated: action.receivedAt
       };
     case FILTER_SESSION_MESSAGES:
-      if (!action.index) return state;
-
-      let session = { ...action.session };
-      const founds = action.str ? action.index.search(action.str) : [];
-      const docs = action.index.documentStore.docs;
-
-      // filter messages by ID from index search and convert `Object` to `Array`
-      session.resultSearch = Object.keys(docs).filter((i) => {
-        const item = docs[i];
-        return founds.filter((j) => j.ref === item.id).length > 0
-      }).reduce((collection, key) => {
-        collection.push(docs[key]);
-        return collection;
-      }, []);
-
       return { ...state,
-        data: session,
+        isFetching: false,
+        didInvalidate: false,
+        data: action.session,
+        lastUpdated: action.receivedAt
       };
     default:
       return state

@@ -34,23 +34,22 @@ class ChannelHeader extends Component {
       instance.unmark();
 
       const term = this.props.search.replace(/^#|@/, '');
-      const focusFirst = () => {
-        try {
-          const scrollTop = dom.querySelector('mark:first-child').offsetTop;
-          this.props.contentScroll._container.scrollTop = scrollTop;
-        } catch (error) {}
-      }
+      const synonymous = term.split('|');
 
-      if (this.props.search.match(/^#|@/)) {
-        let re = new RegExp(`^${term}\\W|\\W${term}$|\\W${term}\\W`, 'i');
-        instance.markRegExp(re, {
-          done: () => focusFirst()
-        });
-      } else {
-        instance.mark(term, {
-          done: () => focusFirst()
-        });
-      }
+      const re = new RegExp(`(^|\\W)(${term})(?=$|\\W)`, 'gmi');
+      instance.markRegExp(re, {
+        done: () => {
+          try {
+            const scrollTop = dom.querySelector('mark').closest('.list_item').offsetTop;
+            this.props.contentScroll._container.scrollTop = scrollTop;
+          } catch (error) {}
+        }
+      });
+
+      // Maybe you would like to use this
+      // instance.mark(synonymous, {
+      //   accuracy: "exactly"
+      // });
     }
   }
 

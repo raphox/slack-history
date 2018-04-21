@@ -53,6 +53,7 @@ if (!args.options.path) {
       if (line) messages.push(line);
     }).on('close', () => {
       let j = 0;
+      let highlights = [];
       let author = time = "";
       let message, last_message, data_match;
 
@@ -60,8 +61,6 @@ if (!args.options.path) {
         message = messages[i];
 
         if (message != '---') {
-          const highlights = highlightsTerms(message, obj.info.highlights);
-
           last_message = messages[i - 1];
           data_match = regex.exec(message);
 
@@ -73,6 +72,7 @@ if (!args.options.path) {
 
             if (!last_message || last_message == '---') {
               message = messages[++i];
+              highlights = highlightTerms(message, obj.info.highlights);
 
               obj.messages[j] = {
                 id: uuid(),
@@ -85,7 +85,8 @@ if (!args.options.path) {
               };
             }
           } else {
-            let last_message = obj.messages[j].messages[obj.messages[j].messages.length - 1];
+            last_message = obj.messages[j].messages[obj.messages[j].messages.length - 1];
+            highlights = highlightTerms(message, obj.info.highlights);
 
             if (!last_message || last_message.username != author) {
               obj.messages[j].messages.push({
@@ -98,7 +99,7 @@ if (!args.options.path) {
               });
             } else {
               last_message.msg += convertMessage(message.trim());
-              last_message.highlights = highlightsTerms(last_message.msg, {});
+              last_message.highlights = highlightTerms(last_message.msg, {});
             }
           }
         } else {
@@ -115,7 +116,10 @@ if (!args.options.path) {
       obj.info.highlights = Object.keys(obj.info.highlights)
         .sort((a, b) => obj.info.highlights[b] - obj.info.highlights[a])
         .reduce((a, v) => {
-          a[v] = obj.info.highlights[v];
+          a[v] = {
+            count: obj.info.highlights[v],
+            synonymous: HIGHLIGHT_TERMS.find((item) => item[0] === v)
+          };
           return a;
         }, {});
 
@@ -140,73 +144,69 @@ const convertMessage = (message) => emojiConvertor.replace_colons(marked(message
  * @param {string} message
  * @param {object} highlights
  */
-const highlightsTerms = (message, highlights = {}) => {
-  const terms = [
-    ["android"],
-    ["animation", "animations", "animação", "animações"],
-    ["apollo"],
-    ["async"],
-    ["babel"],
-    ["backend"],
-    ["bitbucket"],
-    ["book", "books", "livro", "livros"],
-    ["cocoapod"],
-    ["component", "components", "componente", "componentes"],
-    ["css"],
-    ["desktop"],
-    ["flow"],
-    ["form"],
-    ["frontend"],
-    ["fullstack"],
-    ["git"],
-    ["github"],
-    ["gradle"],
-    ["graphql"],
-    ["ios"],
-    ["javascrip", "js"],
-    ["jsx"],
-    ["linux"],
-    ["meteor"],
-    ["mobile"],
-    ["native"],
-    ["open source"],
-    ["package", "packages", "pacote", "pacotes"],
-    ["pwa"],
-    ["react"],
-    ["reasonml"],
-    ["redux"],
-    ["relay"],
-    ["repository", "repositories", "repositorio", "repositorios"],
-    ["spa"],
-    ["ssr"],
-    ["styled", "styleds", "estilo", "estilos"],
-    ["sync"],
-    ["typescript"],
-    ["ui"],
-    ["ux"],
-    ["web"],
-    ["windows"],
-  ];
-
+const highlightTerms = (message, highlights = {}) => {
   let collection = {};
 
-  for (let synonymous of terms) {
+  for (let synonymous of HIGHLIGHT_TERMS) {
     let count = highlights[synonymous[0]] || 0;
-    let total = 0
 
-    for (let term of synonymous) {
-      let re = new RegExp(`\\W${term}\\W`);
-      // using spaces to involve the string to count the extremes
-      total = ` ${message} `.toLowerCase().split(re).length - 1;
-
-      if (total > 0) count += total;
-    }
+    const re = new RegExp(`(^|\\W)(${synonymous.join('|')})($|\\W)`, 'mgi');
+    const matches = message.match(re);
+    const total = matches ? matches.length : 0;
 
     if (total > 0) {
-      highlights[synonymous[0]] = count;
+      highlights[synonymous[0]] = count + total;
       for (let term of synonymous) collection[term] = true;
     }
   }
 
   return Object.keys(collection).join(' ');
 };
+
+const HIGHLIGHT_TERMS = [
+  ["android"],
+  ["animation", "animations", "animação", "animações"],
+  ["apollo"],
+  ["async"],
+  ["babel"],
+  ["backend"],
+  ["bitbucket"],
+  ["book", "books", "livro", "livros"],
+  ["cocoapod"],
+  ["component", "components", "componente", "componentes"],
+  ["css"],
+  ["desktop"],
+  ["flow"],
+  ["form"],
+  ["frontend"],
+  ["fullstack"],
+  ["git"],
+  ["github"],
+  ["gradle"],
+  ["graphql"],
+  ["ios"],
+  ["javascript", "js"],
+  ["jsx"],
+  ["linux"],
+  ["meteor"],
+  ["mobile"],
+  ["native"],
+  ["open source"],
+  ["package", "packages", "pacote", "pacotes"],
+  ["pwa"],
+  ["react"],
+  ["reasonml"],
+  ["redux"],
+  ["relay"],
+  ["repository", "repositories", "repositorio", "repositorios"],
+  ["spa"],
+  ["ssr"],
+  ["styled", "styleds", "estilo", "estilos"],
+  ["sync"],
+  ["typescript"],
+  ["test", "teste"],
+  ["ui"],
+  ["ux"],
+  ["web"],
+  ["windows"],
+];

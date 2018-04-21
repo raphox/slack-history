@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { selectSession, fetchSessionIfNeeded, filterSessionMessages } from 'actions';
 
@@ -24,15 +25,13 @@ class Channel extends Component {
   }
 
   componentDidMount() {
-    const { dispatch } = this.props;
-    dispatch(fetchSessionIfNeeded(this.props.match.params.channel));
+    this.props.fetchSessionIfNeeded();
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.match.params.channel !== prevProps.title && this.props.match.params.channel) {
-      const { dispatch, match } = this.props;
-      dispatch(fetchSessionIfNeeded(match.params.channel));
-      dispatch(selectSession(match.params.channel));
+      this.props.fetchSessionIfNeeded();
+      this.props.selectSession();
 
       this.setState({
         search: '',
@@ -40,7 +39,7 @@ class Channel extends Component {
         selectedAuthors: []
       });
 
-      this.handlerFilter('');
+      this.refs.contentScroll._container.scrollTop = 0;
     }
   }
 
@@ -60,8 +59,7 @@ class Channel extends Component {
       if (str && str[0] === '@') this.setState({ selectedAuthors: [_str] });
 
       this.setState({ search: str }, () => {
-        const { title, session, index, dispatch } = this.props;
-        dispatch(filterSessionMessages(title, session, str, index));
+        this.props.filterSessionMessages(str);
       });
     });
   }
@@ -245,4 +243,37 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Channel);
+function mergeProps(stateProps, dispatchProps, ownProps) {
+  const { title, session, index } = stateProps;
+  const { dispatch } = dispatchProps;
+  const { match } = ownProps;
+
+  return {
+    ...stateProps,
+    ...ownProps,
+    fetchSessionIfNeeded: () => dispatch(fetchSessionIfNeeded(match.params.channel)),
+    selectSession: () => dispatch(selectSession(match.params.channel)),
+    filterSessionMessages: (str) => {
+      if (!index) return null;
+
+      const docs = index.documentStore.docs;
+      const founds = str
+        ? index.search(str.split('|')[0])
+        : [];
+
+      // filter messages by ID from index search and convert `Object` to `Array`
+      // and push `resultSearch` with result on current session
+      session.resultSearch = Object.keys(docs).filter((i) => {
+        const item = docs[i];
+        return founds.filter((j) => j.ref === item.id).length > 0
+      }).reduce((collection, key) => {
+        collection.push(docs[key]);
+        return collection;
+      }, []);
+
+      dispatch(filterSessionMessages(match.params.channel, session));
+    },
+  };
+}
+
+export default connect(mapStateToProps, null, mergeProps)(Channel);

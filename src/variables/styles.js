@@ -51,6 +51,15 @@ const Aside = styled.aside`
     line-height:1.46668;
   }
 
+  sub {
+    font-size: 60%;
+  }
+
+  .scrollbar-container.limited {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
   ul.highlights,
   ul.list-users {
     padding: 0 12px 19px 12px;

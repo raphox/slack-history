@@ -1,4 +1,5 @@
 import fetch from 'cross-fetch';
+import elasticlunr from 'elasticlunr';
 
 export const REQUEST_SESSION = 'REQUEST_SESSION';
 export const RECEIVE_SESSION = 'RECEIVE_SESSION';
@@ -20,13 +21,11 @@ export function invalidateSession(title) {
   };
 };
 
-export function filterSessionMessages(title, session, str, index) {
+export function filterSessionMessages(title, session) {
   return {
     type: FILTER_SESSION_MESSAGES,
     title,
-    session,
-    str,
-    index
+    session: { ...session },
   }
 }
 
@@ -41,7 +40,8 @@ function receiveSession(title, session) {
   return {
     type: RECEIVE_SESSION,
     title,
-    session,
+    session: { ...session },
+    index: generateIndex(session.messages),
     receivedAt: Date.now()
   };
 }
@@ -68,6 +68,25 @@ function shouldFetchSession(state, title) {
   } else {
     return sessions.didInvalidate;
   }
+}
+
+function generateIndex(messages) {
+  const index = elasticlunr(function () {
+    this.addField('username');
+    this.addField('msg');
+    this.addField('highlights');
+    this.setRef('id');
+  });
+
+  for (let message of messages) {
+    index.addDoc({...message});
+
+    for (let answer of message.messages) {
+      index.addDoc({...answer});
+    }
+  }
+
+  return index;
 }
 
 export function fetchSessionIfNeeded(title) {

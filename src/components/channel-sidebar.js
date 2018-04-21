@@ -25,10 +25,26 @@ class ChannelSidebar extends Component {
               {message.username}
             </span>
           </div>
-          <span className="body" dangerouslySetInnerHTML={{__html: message.msg}} />
+          <span className="body" dangerouslySetInnerHTML={{__html: this.truncateMessage(message.msg)}} />
         </div>
       </li>
     );
+  }
+
+  renderHighlight(key, term) {
+      return (
+        <li key={key} onClick={() => this.props.onClickFilter(`#${term.synonymous.join('|')}`)}>
+          { this.props.selectedHighlights.includes(key)
+            ? <a className="active">{key} ({term.count})</a>
+            : <a>{key} ({term.count})</a>
+          }
+        </li>
+      );
+  }
+
+  truncateMessage(message) {
+    const maxlenght = 100;
+    return (message.length > maxlenght) ? message.substr(0, maxlenght-1) + '&hellip;' : message;
   }
 
   render() {
@@ -36,12 +52,13 @@ class ChannelSidebar extends Component {
 
     return (
       <Aside>
-        <h2>About #{title}</h2>
-
         {!isFetching && search && session.resultSearch &&
           <SearchResult>
-            <h3><FontAwesomeIcon icon="search" color="#717274" fixedWidth /> Search results:</h3>
-            <PerfectScrollbar>
+            <h2>
+              <FontAwesomeIcon icon="search" color="#717274" fixedWidth />
+              Search results {session.resultSearch.length ? `(${session.resultSearch.length} messages)` : ''}:
+            </h2>
+            <PerfectScrollbar className="limited">
               {session.resultSearch.length > 0
                 ? <ul className="list">{ session.resultSearch.map((message) => this.renderMessage(message))}</ul>
                 : <p>No messages found.</p>
@@ -50,47 +67,46 @@ class ChannelSidebar extends Component {
           </SearchResult>
         }
 
-        {!isFetching &&
-          <PerfectScrollbar>
-            <h3><FontAwesomeIcon icon="info-circle" color="#717274" fixedWidth /> Details</h3>
-            <div dangerouslySetInnerHTML={{__html: session.info.details}} />
+        <h2>About #{title}</h2>
+        <PerfectScrollbar>
+          {!isFetching &&
+            <section>
+              <h3><FontAwesomeIcon icon="info-circle" color="#717274" fixedWidth /> Details</h3>
+              <div dangerouslySetInnerHTML={{__html: session.info.details}} />
+            </section>
+          }
 
-            <h3><FontAwesomeIcon icon="bolt" color="#2d9ee0" fixedWidth /> Hightlights</h3>
-            <ul className="highlights">
-              {Object.keys(session.info.highlights).map((key) =>
-                <li key={key} onClick={() => this.props.onClickFilter(`#${key}`)}>
-                  { this.props.selectedHighlights.includes(key)
-                    ? <a className="active">{key} ({session.info.highlights[key]})</a>
-                    : <a>{key} ({session.info.highlights[key]})</a>
-                  }
-                </li>
-              )}
-            </ul>
+          {!isFetching &&
+            <section>
+              <h3><FontAwesomeIcon icon="bolt" color="#2d9ee0" fixedWidth /> Hightlights ({Object.keys(session.info.highlights).length})</h3>
+                <ul className="highlights">{Object.keys(session.info.highlights).map((key) =>
+                  this.renderHighlight(key, session.info.highlights[key])
+                )}</ul>
+            </section>
+          }
 
-            <h3><FontAwesomeIcon icon="user" color="#2ea664" fixedWidth /> Members</h3>
-            <ul className="list-users">
-              {session.info.authors.map((author) =>
-                <li key={author} onClick={() => this.props.onClickFilter(`@${author}`)}>
-                  { this.props.selectedAuthors.includes(author)
-                    ? <a className="active"><Avatar name={author} size={20} />{author}</a>
-                    : <a><Avatar name={author} size={20} />{author}</a>
-                  }
-                </li>
-              )}
-            </ul>
-          </PerfectScrollbar>
-        }
+          {!isFetching &&
+            <section>
+              <h3><FontAwesomeIcon icon="user" color="#2ea664" fixedWidth /> Members ({session.info.authors.length})</h3>
+              <ul className="list-users">
+                {session.info.authors.map((author) =>
+                  <li key={author} onClick={() => this.props.onClickFilter(`@${author}`)}>
+                    { this.props.selectedAuthors.includes(author)
+                      ? <a className="active"><Avatar name={author} size={20} />{author}</a>
+                      : <a><Avatar name={author} size={20} />{author}</a>
+                    }
+                  </li>
+                )}
+              </ul>
+            </section>
+          }
+        </PerfectScrollbar>
       </Aside>
     );
   }
 }
 
 const SearchResult = styled.section`
-  .scrollbar-container {
-    max-height: 300px;
-    overflow: hidden;
-  }
-
   a {
     color: #0576b9;
   }
