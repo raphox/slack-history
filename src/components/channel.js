@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { selectSession, fetchSessionIfNeeded, filterSessionMessages } from 'actions';
 
@@ -244,7 +243,7 @@ function mapStateToProps(state) {
 }
 
 function mergeProps(stateProps, dispatchProps, ownProps) {
-  const { title, session, index } = stateProps;
+  const { session, index } = stateProps;
   const { dispatch } = dispatchProps;
   const { match } = ownProps;
 

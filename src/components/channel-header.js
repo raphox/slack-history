@@ -34,8 +34,6 @@ class ChannelHeader extends Component {
       instance.unmark();
 
       const term = this.props.search.replace(/^#|@/, '');
-      const synonymous = term.split('|');
-
       const re = new RegExp(`(^|\\W)(${term})(?=$|\\W)`, 'gmi');
       instance.markRegExp(re, {
         done: () => {
