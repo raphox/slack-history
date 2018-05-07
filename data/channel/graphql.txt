@@ -1,0 +1,45 @@
+marcelorl [9:51 AM]
+@Yuri Toledo https://www.udemy.com/introduction-to-graphql-and-apollo-building-modern-apis/
+
+---
+
+sibelius [11:56 PM]
+paginação bidirecional com mongo
+https://github.com/entria/graphql-mongoose-loader/pull/16
+funciona para relay modern e apollo
+
+fdaciuk [17 days ago]
+foi basicamente remover uns arquivos pra funcionar haha
+
+hnordt [17 days ago]
+graphql eh genial
+
+---
+
+raphox [Apr 2nd at 8:30 AM]
+Bom dia pessoal. me veio uma dúvida de conceito aqui.
+Nunca fiz nada avançado com Graphql, mas em uma discussão mental aqui eu me propus a pensar o graphql como uma API REST para tratar resources. Tipo um CRUD de objetos. Eu acho que para todo muito isso é um pensamento comum. Mas o que me gerou a dúvida é quanto ao consumo de ações fora do CRUD tipo relatórios ou simples disparo de ações automáticas.
+Eu sei que daria para criar objetos para relatórios e também para respostas para a chamada de ações, mas será que seria relevante? É comum uma API oferecer os serviços do graphql juntamente com endpoints em JSON puro? Ou o recomendado é um API GraphQL responder apenas para um cliente GraphQL?
+
+joao [1 month ago]
+https://medium.freecodecamp.org/rest-apis-are-rest-in-peace-apis-long-live-graphql-d412e559d8e4
+
+(96 kB)
+Jul 24th, 2017 at 12:57 PM
+
+raphox [1 month ago]
+Então, pelo que entendi, o link explica a vantagem de tratar objetos (resource) com GraphQL no lugar da REST. Mas quanto as informações de uma tela de relatório por exemplo, seria uma boa prática gerar um objeto (Schema) para um caso como esse? (edited)
+
+raphox [1 month ago]
+Estava pensando por exemplo se um relatório tenha várias colunas para renderizar um gráfico. O resultado será várias colunas e atributos.
+Mas há um paralelo interessante aqui https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b O exemplo 'hello world' me fez pensar um pouco diferente. Já que eu poderia ter um `Query` para cada gráfico e retornar o que quiser, ao invés de ter um objeto complexo para cada gráfico.
+10 min read
+
+(37 kB)
+Jun 27th, 2017 at 1:59 PM
+
+sibelius [1 month ago]
+Pesquisa GraphQL time series no YouTube
+
+sibelius [1 month ago]
+La ele explica como o GraphQL ajuda na geração de relatórios
