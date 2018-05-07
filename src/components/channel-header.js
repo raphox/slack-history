@@ -24,7 +24,7 @@ class ChannelHeader extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.search !== prevProps.search) {
+    if (this.props.search !== prevProps.search && this.props.search) {
       this.setState({
         search: this.props.search
       });
@@ -35,6 +35,7 @@ class ChannelHeader extends Component {
 
       const term = this.props.search.replace(/^#|@/, '');
       const re = new RegExp(`(^|\\W)(${term})(?=$|\\W)`, 'gmi');
+
       instance.markRegExp(re, {
         done: () => {
           try {
@@ -58,25 +59,31 @@ class ChannelHeader extends Component {
   }
 
   render() {
-    const { title, session, isFetching} = this.props;
+    const { title, session, isFetching, match} = this.props;
 
     return (
       <Header>
         <Aside style={{flex: 'auto', border: 'none'}}>
           <h1>{ title }</h1>
-          {!isFetching &&
+          {!isFetching && ['qa', 'channel'].indexOf(match.params.session) != -1 &&
             <ul>
               <li><FontAwesomeIcon icon="user" fixedWidth/> { session.info.authors.length } authors</li>
               <li><FontAwesomeIcon icon="thumbtack" fixedWidth/> { session.messages.length } messages</li>
               <li>{ session.info.details }</li>
             </ul>}
+          {['author'].indexOf(match.params.session) != -1 &&
+            <ul>
+              <li>About author</li>
+            </ul>
+          }
         </Aside>
-        <Search style={{border: 'none'}}>
-          <FontAwesomeIcon icon="search" color="#a0a0a2" />
-          <input type="text" placeholder="Search"
-            value={this.state.search}
-            onChange={this.handlerKeyPressSearch} />
-        </Search>
+        {['qa', 'channel'].indexOf(match.params.session) != -1 &&
+          <Search style={{border: 'none'}}>
+            <FontAwesomeIcon icon="search" color="#a0a0a2" />
+            <input type="text" placeholder="Search"
+              value={this.state.search}
+              onChange={this.handlerKeyPressSearch} />
+          </Search>}
       </Header>
     );
   }

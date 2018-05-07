@@ -1,0 +1,4 @@
+raphox [0:00 PM]
+Utilize os respositórios da comunidade para postar vagas
+https://github.com/react-brasil/vagas/issues
+https://github.com/react-brasil/me-contrata/issues

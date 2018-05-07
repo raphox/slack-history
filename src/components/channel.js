@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Avatar from 'react-avatar';
 import styled from 'styled-components';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
 import { connect } from 'react-redux';
@@ -64,7 +63,7 @@ class Channel extends Component {
   }
 
   render() {
-    const { session, isFetching } = this.props;
+    const { session, isFetching, match } = this.props;
 
     return (
       <Wrapper>
@@ -110,10 +109,9 @@ class Channel extends Component {
           </Link>
         </div>
         <div className="content">
-          {question && <FontAwesomeIcon icon="question" size="3x" color="white" pull="right"/>}
           <div className="content_header">
             <span className="sender">
-              <Link to={`/author/${message.username}`}>{message.username}</Link>
+              {message.username}
             </span>
           </div>
           <span className="body" dangerouslySetInnerHTML={{__html: message.msg}} />
@@ -250,7 +248,7 @@ function mergeProps(stateProps, dispatchProps, ownProps) {
   return {
     ...stateProps,
     ...ownProps,
-    fetchSessionIfNeeded: () => dispatch(fetchSessionIfNeeded(match.params.channel)),
+    fetchSessionIfNeeded: () => dispatch(fetchSessionIfNeeded(match.params.channel, match.params.session)),
     selectSession: () => dispatch(selectSession(match.params.channel)),
     filterSessionMessages: (str) => {
       if (!index) return null;

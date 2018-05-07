@@ -1,0 +1,42 @@
+{
+  "info": {
+    "details": "",
+    "highlights": {
+      "github": {
+        "count": 2,
+        "synonymous": [
+          "github"
+        ]
+      },
+      "react": {
+        "count": 2,
+        "synonymous": [
+          "react"
+        ]
+      }
+    },
+    "authors": [
+      "raphox"
+    ]
+  },
+  "messages": [
+    {
+      "id": "69bb87d6-b929-42b6-b1a0-8e9ebf315e1f",
+      "img": null,
+      "username": "raphox",
+      "time": "0:00 PM",
+      "msg": "<p>Utilize os respositórios da comunidade para postar vagas</p>\n",
+      "messages": [
+        {
+          "id": "439a0510-e5cf-4aa2-9a32-70cb649c6d97",
+          "img": null,
+          "username": "raphox",
+          "time": "0:00 PM",
+          "msg": "<p><a href=\"https://github.com/react-brasil/vagas/issues\">https://github.com/react-brasil/vagas/issues</a></p>\n<p><a href=\"https://github.com/react-brasil/me-contrata/issues\">https://github.com/react-brasil/me-contrata/issues</a></p>\n",
+          "highlights": "github react"
+        }
+      ],
+      "highlights": ""
+    }
+  ]
+}

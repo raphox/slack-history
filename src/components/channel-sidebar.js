@@ -48,7 +48,7 @@ class ChannelSidebar extends Component {
   }
 
   render() {
-    const {title, session, isFetching, search} = this.props;
+    const {title, session, isFetching, search, match} = this.props;
 
     return (
       <Aside>
@@ -69,7 +69,7 @@ class ChannelSidebar extends Component {
 
         <h2>About #{title}</h2>
         <PerfectScrollbar>
-          {!isFetching &&
+          {!isFetching && ['qa', 'channel'].indexOf(match.params.session) != -1 &&
             <section>
               <h3><FontAwesomeIcon icon="info-circle" color="#717274" fixedWidth /> Details</h3>
               <div dangerouslySetInnerHTML={{__html: session.info.details}} />
@@ -85,7 +85,7 @@ class ChannelSidebar extends Component {
             </section>
           }
 
-          {!isFetching &&
+          {!isFetching && ['qa', 'channel'].indexOf(match.params.session) != -1 &&
             <section>
               <h3><FontAwesomeIcon icon="user" color="#2ea664" fixedWidth /> Members ({session.info.authors.length})</h3>
               <ul className="list-users">
@@ -161,6 +161,7 @@ const SearchResult = styled.section`
 
       &:hover {
         background-color: #f5f5f5;
+        cursor: pointer;
       }
 
       .gutter {

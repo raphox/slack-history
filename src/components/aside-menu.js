@@ -7,11 +7,11 @@ import { Aside } from 'variables/styles';
 
 const ASIDE_MENU_ITEMS = {
   sessions: [{
-    path: "/channel/dan-abramov-201804",
+    path: "/qa/dan-abramov-201804",
     title: "dan-abramov-201804",
     description: ""
   }, {
-    path: "/channel/sibelius-201803",
+    path: "/qa/sibelius-201803",
     title: "sibelius-201803",
     description: ""
   }],
@@ -22,18 +22,37 @@ const ASIDE_MENU_ITEMS = {
     path: "/author/sibelius",
     title: "sibelius"
   }],
+  channels: [{
+    path: "/channel/general",
+    title: "general",
+  }, {
+    path: "/channel/jobs",
+    title: "jobs",
+  }, {
+    path: "/channel/graphql",
+    title: "graphql",
+  }, {
+    path: "/channel/react-native",
+    title: "react-native",
+  }, {
+    path: "/channel/test",
+    title: "test",
+  }, {
+    path: "/channel/tutorial-and-tips",
+    title: "tutorial-and-tips",
+  }]
 }
 
 class AsideMenu extends Component {
   render() {
     return (
       <Aside className={this.props.className}>
-        <h1>React Brasil <sub>Q&A</sub></h1>
+        <h1>React Brasil <sub>Slack history</sub></h1>
 
         <PerfectScrollbar>
           <ol>
             <li>
-              <span className="title">Sessions</span>
+              <span className="title">Q&amp;A sessions</span>
               <dl className="channels">
                 {ASIDE_MENU_ITEMS.sessions.map((session) =>
                   <Link to={session.path} key={session.path}>
@@ -44,11 +63,20 @@ class AsideMenu extends Component {
               </dl>
             </li>
             <li>
-              <span className="title">Autores</span>
+              <span className="title">Q&amp;A authors</span>
               <dl className="authors">
                 {ASIDE_MENU_ITEMS.authors.map((author) =>
                   <Link to={author.path} key={author.path}>
                     <dt>{author.title}</dt>
+                  </Link>
+                )}
+              </dl>
+            </li><li>
+              <span className="title">Channels highlights</span>
+              <dl className="channels">
+                {ASIDE_MENU_ITEMS.channels.map((channel) =>
+                  <Link to={channel.path} key={channel.path}>
+                    <dt>{channel.title}</dt>
                   </Link>
                 )}
               </dl>

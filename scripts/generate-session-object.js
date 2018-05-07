@@ -1,5 +1,5 @@
 const argv = require('argv');
-const fs = require('fs');
+const fs = require('fs-extra')
 const path = require('path');
 const readline = require('readline');
 const jsonfile = require('jsonfile');
@@ -26,10 +26,10 @@ if (!args.options.path) {
   if (fs.existsSync(file_path)) {
     console.log('File found.');
 
-    const destination = "./public/sessions";
+    const destination = path.join("./", "public", path.relative('./', path.dirname(file_path)));
     const destination_path = path.join(destination, path.basename(file_path, '.txt') + '.json');
 
-    !fs.existsSync(destination) && fs.mkdirSync(destination);
+    !fs.existsSync(destination) && fs.ensureDirSync(destination);
 
     let obj = {
       info: {

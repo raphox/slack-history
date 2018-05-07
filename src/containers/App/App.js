@@ -8,7 +8,6 @@ import { Wrapper, Content, Footer } from 'variables/styles';
 
 import AsideMenu from 'components/aside-menu';
 import Channel from 'components/channel';
-import Author from 'components/author';
 
 class App extends Component {
   render() {
@@ -19,8 +18,7 @@ class App extends Component {
             <AsideMenu />
             <Switch>
               <Redirect exact from='/' to="/channel/dan-abramov-201804"/>
-              <Route path='/channel/:channel' component={Channel}/>
-              <Route path='/author/:author' component={Author}/>
+              <Route path='/:session/:channel' component={Channel}/>
             </Switch>
           </Content>
           <Footer>

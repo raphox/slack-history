@@ -46,13 +46,13 @@ function receiveSession(title, session) {
   };
 }
 
-function fetchSession(title) {
+function fetchSession(title, session) {
   return dispatch => {
     if (!title) return null;
 
     dispatch(requestSession(title));
 
-    return fetch(`${process.env.PUBLIC_URL}/sessions/${title}.json`)
+    return fetch(`${process.env.PUBLIC_URL}/data/${session}/${title}.json`)
       .then(response => response.json())
       .then(json => dispatch(receiveSession(title, json)));
   };
@@ -89,10 +89,10 @@ function generateIndex(messages) {
   return index;
 }
 
-export function fetchSessionIfNeeded(title) {
+export function fetchSessionIfNeeded(title, session) {
   return (dispatch, getState) => {
     if (shouldFetchSession(getState(), title)) {
-      return dispatch(fetchSession(title));
+      return dispatch(fetchSession(title, session));
     }
   }
 };

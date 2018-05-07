@@ -1,0 +1,17 @@
+Dan Abramov [0:00 PM]
+Working on @reactjs. Co-author of Redux and Create React App. Building tools for humans.
+
+---
+
+Github [0:00 PM]
+https://github.com/gaearon
+
+---
+
+Twitter [0:00 PM]
+https://twitter.com/dan_abramov
+
+---
+
+Contats [0:00 PM]
+E-mail: dan.abramov@me.com

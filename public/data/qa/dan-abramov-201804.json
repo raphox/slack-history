@@ -217,14 +217,14 @@
   },
   "messages": [
     {
-      "id": "33f49e10-aefd-4c0e-8317-5e7c7e4d1218",
+      "id": "05c57163-d61e-4a31-85db-26aa460928bd",
       "img": null,
       "username": "Vinicius Rangel",
       "time": "2:01 PM",
       "msg": "<p>Dan, there are bigger plans to redux this year?</p>\n",
       "messages": [
         {
-          "id": "599fd774-2f88-4f3d-b358-c5916a4a8923",
+          "id": "4cef9b30-9869-4cb8-8b6d-60a6a8be9455",
           "img": null,
           "username": "Dan",
           "time": "3:01 PM",
@@ -235,14 +235,14 @@
       "highlights": "redux"
     },
     {
-      "id": "7642ad9d-e7b3-423a-b392-48f1ff21ba81",
+      "id": "c97660a8-cb24-4cc1-86d3-d4a094a65fcc",
       "img": null,
       "username": "thiago.leite",
       "time": "2:02 PM",
       "msg": "<p>Andrew Clark said on his Twitter that class components will be considered as legacy APIs in the future, while function components will remain. We must take this statement in consideration in the projects that are under development/will be developed? And what is the best way to write a component?</p>\n",
       "messages": [
         {
-          "id": "c0db202c-d47c-4784-8b19-6687a9d1d9a1",
+          "id": "aeafc19d-bab5-4783-a970-d7e0c34da246",
           "img": null,
           "username": "Dan",
           "time": "3:02 PM",
@@ -253,14 +253,14 @@
       "highlights": "component components componente componentes"
     },
     {
-      "id": "83463ab5-2a45-4c88-9ca7-cb1003db3812",
+      "id": "b994686b-96f5-43d2-8094-bb98a36889ce",
       "img": null,
       "username": "pvieira91",
       "time": "2:00 PM",
       "msg": "<p>1) Tests | We went from 0 to 100 in what regards unit testing. It’s pretty common nowadays to find companies that have very high thresholds on unit testings. Do you think that it’s valuable to impose a high unit test coverage even for presentational components?</p>\n",
       "messages": [
         {
-          "id": "e0d80f4c-2def-45c9-a456-0473d1194da1",
+          "id": "14e6a2f0-9cf7-45a6-a149-21ecee5712a8",
           "img": null,
           "username": "pvieira91",
           "time": "2:00 PM",
@@ -268,7 +268,7 @@
           "highlights": "component components componente componentes css javascript js styled styleds estilo estilos"
         },
         {
-          "id": "0f902f31-e77f-4dde-b2a7-a9b6d1009905",
+          "id": "b15aba34-c90e-47f9-92cd-d8d5d627f304",
           "img": null,
           "username": "Dan",
           "time": "3:05 PM",
@@ -279,14 +279,14 @@
       "highlights": "component components componente componentes test teste"
     },
     {
-      "id": "a5f8a6bf-1566-4d68-91fc-2bf0705fad35",
+      "id": "35f1e035-6009-4ee7-8b7f-d183a75eaf7f",
       "img": null,
       "username": "Jabur",
       "time": "3:05 PM",
       "msg": "<p>@Dan you can use threads</p>\n",
       "messages": [
         {
-          "id": "0047a002-995a-4d36-881e-8ce7e1038135",
+          "id": "a1400d3b-33da-44f0-8742-5c144bd50d16",
           "img": null,
           "username": "Dan",
           "time": "3:06 PM",
@@ -294,7 +294,7 @@
           "highlights": ""
         },
         {
-          "id": "d468b112-fb11-44cd-9b7a-5d3f477b4ce9",
+          "id": "ab69a7f1-87eb-498d-9f6b-8474e2295417",
           "img": null,
           "username": "Jabur",
           "time": "3:06 PM",
@@ -302,7 +302,7 @@
           "highlights": ""
         },
         {
-          "id": "5b5174be-e5e9-4239-a9ea-17279019b525",
+          "id": "274c59e9-d41d-4b2f-8673-2c09870de6ed",
           "img": null,
           "username": "Dan",
           "time": "3:08 PM",
@@ -310,7 +310,7 @@
           "highlights": ""
         },
         {
-          "id": "61c038f1-efb9-4417-ae9b-b3eddc661864",
+          "id": "b6cca85d-8f78-475d-9318-8e4caa05a240",
           "img": null,
           "username": "Nic",
           "time": "3:06 PM",
@@ -318,7 +318,7 @@
           "highlights": ""
         },
         {
-          "id": "2d36d297-56f1-433e-b3fd-e4f29488b4e8",
+          "id": "1d72e09a-3377-482f-9bc8-701fb0c26dd9",
           "img": null,
           "username": "sibelius",
           "time": "3:08 PM",
@@ -326,7 +326,7 @@
           "highlights": ""
         },
         {
-          "id": "3db894c2-39ab-4c80-ba65-5b3ba9788478",
+          "id": "c1b8e44b-1ba3-43fc-ae8a-0888c8bf6cd8",
           "img": null,
           "username": "Dan",
           "time": "3:08 PM",
@@ -334,7 +334,7 @@
           "highlights": ""
         },
         {
-          "id": "756adb88-f703-4055-a2d3-a6832f025c49",
+          "id": "f84d1952-b162-4390-8a80-04669b5677d8",
           "img": null,
           "username": "Jabur",
           "time": "3:09 PM",
@@ -345,14 +345,14 @@
       "highlights": ""
     },
     {
-      "id": "659f4a12-4cac-4e5a-9fdf-84772dcc10c9",
+      "id": "fd09b23b-caa2-4400-8a31-f5020cd9c03a",
       "img": null,
       "username": "sibelius",
       "time": "2:03 PM",
       "msg": "<blockquote>\n<p>how will async react help in handling requests waterfall?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "ccdbed39-327d-462a-bdce-e29f793d6b71",
+          "id": "c302b33a-ad5c-4b83-8e25-284abee4588a",
           "img": null,
           "username": "sibelius",
           "time": "2:03 PM",
@@ -360,7 +360,7 @@
           "highlights": "async flow native react relay typescript"
         },
         {
-          "id": "3c0d5018-f528-4f49-a9b7-c3db62df36f1",
+          "id": "f2475492-5bf2-4d86-be75-f7219cc16f27",
           "img": null,
           "username": "Dan",
           "time": "3:14 PM",
@@ -371,14 +371,14 @@
       "highlights": "async react"
     },
     {
-      "id": "f1459a90-1be5-4429-a300-2e2195c15071",
+      "id": "38bcfd48-c980-433a-897d-dc2ab1841196",
       "img": null,
       "username": "gabrielrubens",
       "time": "2:05 PM",
       "msg": "<p>We all know that unit testing is important, but it’s hard to make sure that all cases are being covered in a test suite</p>\n",
       "messages": [
         {
-          "id": "18c9b2ff-169a-4d35-aa8b-7ac48abd2ad3",
+          "id": "1396783a-cb08-4d63-8622-a8860c31cc98",
           "img": null,
           "username": "gabrielrubens",
           "time": "2:05 PM",
@@ -386,7 +386,7 @@
           "highlights": "test teste"
         },
         {
-          "id": "62812865-c7de-4eb3-b3c5-7a2a06b90616",
+          "id": "4067795f-2824-4415-a0b3-e52c020527a1",
           "img": null,
           "username": "Dan",
           "time": "3:15 PM",
@@ -397,14 +397,14 @@
       "highlights": "test teste"
     },
     {
-      "id": "2864fae6-a75f-46d6-8df4-9901e280c513",
+      "id": "102713e4-6f9e-4603-8ab6-426a93ddebd5",
       "img": null,
       "username": "Marco Nicolodi",
       "time": "3:09 PM",
       "msg": "<p>How do you balance fast delivery with code quality?</p>\n",
       "messages": [
         {
-          "id": "4fd68e10-dc41-436a-9c8f-593564f40dad",
+          "id": "a825e2a6-6b03-42c4-806d-da1b842c7f1e",
           "img": null,
           "username": "Dan",
           "time": "3:16 PM",
@@ -415,14 +415,14 @@
       "highlights": ""
     },
     {
-      "id": "da82d7b8-843f-4f2b-925b-14ee531feeff",
+      "id": "22d18944-526b-481d-976f-b658adb75089",
       "img": null,
       "username": "haz",
       "time": "2:56 PM",
       "msg": "<p>How did you start working on Facebook? Was invited? How was the process?</p>\n",
       "messages": [
         {
-          "id": "1f1db0a6-a8f5-4770-b0c3-951605edd66c",
+          "id": "8d1932dc-191e-4a6a-bb86-08868a5c9e8c",
           "img": null,
           "username": "Dan",
           "time": "3:18 PM",
@@ -433,14 +433,14 @@
       "highlights": ""
     },
     {
-      "id": "07d73150-5175-4ed4-b136-6746cee2358f",
+      "id": "fc6f99c1-b1ad-48b3-aa8b-e57152b7656b",
       "img": null,
       "username": "sibelius",
       "time": "2:15 PM",
       "msg": "<blockquote>\n<p>what do you think about recompose?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "90fbaa1f-1c64-42ec-a221-9662d64c8e57",
+          "id": "906cca76-29bb-475a-b397-1c7dbb8271aa",
           "img": null,
           "username": "Dan",
           "time": "3:19 PM",
@@ -451,14 +451,14 @@
       "highlights": ""
     },
     {
-      "id": "4681334c-d7f4-4519-8edf-733faf96754e",
+      "id": "a1892374-c67d-47d8-8f26-4117ce1355ae",
       "img": null,
       "username": "r.santos",
       "time": "2:10 PM",
       "msg": "<p>I hope not to do a dummy question but</p>\n",
       "messages": [
         {
-          "id": "0f130158-fdae-43db-9e77-a93fa3f6c766",
+          "id": "6fd5511b-b0b4-4d84-9933-ae23f86d6501",
           "img": null,
           "username": "r.santos",
           "time": "2:10 PM",
@@ -466,7 +466,7 @@
           "highlights": "react redux"
         },
         {
-          "id": "3f7317ce-8b86-4194-948a-60a925c27c2c",
+          "id": "9c7f3347-0f3a-4823-8b99-ac8b8dafe6d2",
           "img": null,
           "username": "Dan",
           "time": "3:19 PM",
@@ -474,7 +474,7 @@
           "highlights": "react redux"
         },
         {
-          "id": "9554dba3-cded-45d5-a794-d9242d979b10",
+          "id": "72b79e13-5e2a-4584-9a3c-0850c07fa108",
           "img": null,
           "username": "r.santos",
           "time": "2:13 PM",
@@ -482,7 +482,7 @@
           "highlights": "react redux"
         },
         {
-          "id": "86a400ad-85c0-43f3-8af5-b5615b5fcb28",
+          "id": "de0979fc-0519-4b0f-9496-5ce82fc048a1",
           "img": null,
           "username": "Dan",
           "time": "3:21 PM",
@@ -493,14 +493,14 @@
       "highlights": ""
     },
     {
-      "id": "c9a27ce1-be62-4e03-b4d6-7f1de5ac6c15",
+      "id": "73823670-05b1-4a22-9b2e-e7c25f49e1b8",
       "img": null,
       "username": "jpbretanha",
       "time": "2:15 PM",
       "msg": "<p>Should we start moving from using HoC’s and start to use render props?</p>\n",
       "messages": [
         {
-          "id": "8284f8a0-9b65-41c5-b477-70e550da31a9",
+          "id": "94c3ded6-6c91-403a-a820-d452697eec1e",
           "img": null,
           "username": "Dan",
           "time": "3:21 PM",
@@ -511,14 +511,14 @@
       "highlights": ""
     },
     {
-      "id": "95d0bb4f-fa9f-43f7-ac2e-efbece0fbe01",
+      "id": "f62c1a90-a171-4aef-8369-76a0e264f5ea",
       "img": null,
       "username": "sibelius",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>is React going to add a compilation step soon?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "a9fe5ce7-09e5-4aa9-ae7a-0d65cc84b3ea",
+          "id": "4fee26c6-d0f7-4ff0-b7dd-0d6fab9e167a",
           "img": null,
           "username": "Dan",
           "time": "3:22 PM",
@@ -529,14 +529,14 @@
       "highlights": "react"
     },
     {
-      "id": "76e277a8-e1b0-4cae-8e0d-5c771920accc",
+      "id": "dee503aa-4c3e-4e23-ae8d-76f3ff976814",
       "img": null,
       "username": "sibelius",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>how does Facebook handles flow-typed internally?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "f6dcaa01-d3a8-46e0-bf1b-496b8d7f65a4",
+          "id": "87b77952-b401-4a0c-af3e-570c59cf782b",
           "img": null,
           "username": "Dan",
           "time": "3:22 PM",
@@ -547,14 +547,14 @@
       "highlights": "flow"
     },
     {
-      "id": "fa80316d-da51-4efb-b2e1-d169e0b0de83",
+      "id": "c740a114-b330-4670-9baf-f08c6e082a28",
       "img": null,
       "username": "weslopes",
       "time": "2:24 PM",
       "msg": "<p>What about the microservices in front-end with react? It’s a good idea?</p>\n",
       "messages": [
         {
-          "id": "b5dfeb79-2aa7-4d30-94dd-25577094c503",
+          "id": "4a4b9960-1a65-4574-9b65-b6ec80e7f23c",
           "img": null,
           "username": "Dan",
           "time": "3:23 PM",
@@ -565,14 +565,14 @@
       "highlights": "react"
     },
     {
-      "id": "7e9d50dc-467c-44c1-bdd1-09c5d85fb8ba",
+      "id": "449ac3ca-68c9-47b8-99d2-532cc0897905",
       "img": null,
       "username": "sibelius",
       "time": "2:19 PM",
       "msg": "<blockquote>\n<p>will Facebook switch to fullstack Javascript? are you guys using nodejs in backend?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "1e054fcd-a90a-4ac9-8b8e-dcfa13f6fabc",
+          "id": "d17e286d-3c34-4d95-9a4f-9469c9dcdd86",
           "img": null,
           "username": "Dan",
           "time": "3:24 PM",
@@ -583,14 +583,14 @@
       "highlights": "backend fullstack javascript js"
     },
     {
-      "id": "fc8827ec-9e66-4ee4-92f8-a9bd411317ca",
+      "id": "4467d200-0f8c-4bac-9610-ed0e3b4dae9d",
       "img": null,
       "username": "jcm",
       "time": "2:17 PM",
       "msg": "<blockquote>\n<p>what do you think of function as child components ?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "b0b76f5a-7406-40d0-9b67-7889e39ac583",
+          "id": "363b4cab-29e3-4d16-a705-237422aacef1",
           "img": null,
           "username": "Dan",
           "time": "3:24 PM",
@@ -601,14 +601,14 @@
       "highlights": "component components componente componentes"
     },
     {
-      "id": "d860162b-1399-45d0-bc47-ccf255850d54",
+      "id": "84ff4d6c-af35-4e70-9f1a-396b0d172919",
       "img": null,
       "username": "Marco Nicolodi",
       "time": "3:23 PM",
       "msg": "<p>What are the most important things to check during code reviews?</p>\n",
       "messages": [
         {
-          "id": "7d3954fe-c9b2-4332-8bf1-c5d5a3001287",
+          "id": "54c0561d-ea06-4470-ab17-5a619b190f3c",
           "img": null,
           "username": "Dan",
           "time": "3:26 PM",
@@ -619,14 +619,14 @@
       "highlights": ""
     },
     {
-      "id": "2eb83b70-9ac8-4d30-b5e9-c0471e876317",
+      "id": "96a876f2-b408-4d7e-aeb7-23f129e44730",
       "img": null,
       "username": "lucasbento",
       "time": "3:23 PM",
       "msg": "<p>How do you feel about ReasonML?</p>\n",
       "messages": [
         {
-          "id": "acb33925-ee68-4329-a721-9b982603c4de",
+          "id": "5aa95af1-d247-48da-8ea6-d404aa33c24e",
           "img": null,
           "username": "Dan",
           "time": "3:26 PM",
@@ -637,14 +637,14 @@
       "highlights": "reasonml"
     },
     {
-      "id": "b08d79ef-78de-4038-813f-671fcdbe0498",
+      "id": "a03ac896-2715-47b2-b7a6-c77448429244",
       "img": null,
       "username": "Lucas Sartori",
       "time": "2:32 PM",
       "msg": "<p>Hello Dan, I’m a great fan, really appreciate you taking your time to answer some questions here!</p>\n",
       "messages": [
         {
-          "id": "c59d2e4c-2863-4d22-8da0-a459337259d0",
+          "id": "8fafe6c6-ed95-4f9f-8af9-74c8ec41249c",
           "img": null,
           "username": "Lucas Sartori",
           "time": "2:32 PM",
@@ -652,7 +652,7 @@
           "highlights": "javascript js react"
         },
         {
-          "id": "a57cad8e-e833-46ce-a05d-17fee6ba85bd",
+          "id": "214b40a2-2cf7-4f17-b5f2-061e6851f404",
           "img": null,
           "username": "Dan",
           "time": "3:29 PM",
@@ -663,14 +663,14 @@
       "highlights": ""
     },
     {
-      "id": "e79084aa-11ac-4efe-9128-e09519e7f0ce",
+      "id": "748a230c-2e15-498a-abbe-02b7331a3e3c",
       "img": null,
       "username": "rudiney",
       "time": "3:25 PM",
       "msg": "<p>Not much a tech question but, how is the mood inside Facebook about this Cambridge Analytica data breach scandal? Can we expect big changes on the FB developers polices or any chance the open source tools licenses being reveiewed?</p>\n",
       "messages": [
         {
-          "id": "6e02a1e1-4dbe-4f52-af4a-768a8405b36e",
+          "id": "7088fa78-157b-4f46-a355-60a55cb68d35",
           "img": null,
           "username": "Dan",
           "time": "3:34 PM",
@@ -681,14 +681,14 @@
       "highlights": "open source"
     },
     {
-      "id": "124204ff-56ea-42b4-865e-499b42037814",
+      "id": "862e5844-c85c-40f6-aae7-fa672a1d7c22",
       "img": null,
       "username": "guilhermepontes",
       "time": "3:27 PM",
       "msg": "<p>What is your typical day like?</p>\n",
       "messages": [
         {
-          "id": "cd0bcd50-7998-4d54-a043-8199a15ad1d3",
+          "id": "83b7d3f8-323d-4378-9b09-c56ca7effb8d",
           "img": null,
           "username": "Dan",
           "time": "3:35 PM",
@@ -699,14 +699,14 @@
       "highlights": ""
     },
     {
-      "id": "9e329e63-a39a-4fa7-85dd-91e7e1400ac1",
+      "id": "4505934d-5b0c-4361-8f22-b7ec377084cf",
       "img": null,
       "username": "lucasbento",
       "time": "3:25 PM",
       "msg": "<p>How’s the environment in Facebook HQ? How does it compare to a startup (in terms of bureaucracy, speed, etc)?</p>\n",
       "messages": [
         {
-          "id": "ea38af00-e582-423d-92e9-3a52832ed474",
+          "id": "7feb7753-a7ef-4862-9d66-8ab3047dd7f6",
           "img": null,
           "username": "Dan",
           "time": "3:36 PM",
@@ -717,14 +717,14 @@
       "highlights": ""
     },
     {
-      "id": "3a5b0587-f537-4461-a7a0-974d3ecafa44",
+      "id": "aa0c56aa-83a6-4814-aadd-5cf52ef44e95",
       "img": null,
       "username": "Jabur",
       "time": "3:36 PM",
       "msg": "<p>Do you think that the new versions of React - 16.3.0 and beyond - are going in a direction that will improve state management power to the point where Redux might become useless?</p>\n",
       "messages": [
         {
-          "id": "bf6e78d7-717e-4f16-8bd5-f95a7c818649",
+          "id": "adb755df-b870-4a17-b234-bcda1f50f1d8",
           "img": null,
           "username": "Dan",
           "time": "3:39 PM",
@@ -735,14 +735,14 @@
       "highlights": "react redux"
     },
     {
-      "id": "e4c9fa58-28d5-42ec-a163-b229e446046b",
+      "id": "ad3dc21f-18b8-41a4-bf97-d64af603dd15",
       "img": null,
       "username": "tiagosouto",
       "time": "2:50 PM",
       "msg": "<p>what’s your opinion about RxJS?</p>\n",
       "messages": [
         {
-          "id": "5a7bf6a8-eeea-4b0a-a4d9-5f75e2676824",
+          "id": "b251f466-9524-47a6-8d21-b1b97c59d8c3",
           "img": null,
           "username": "Dan",
           "time": "3:39 PM",
@@ -753,14 +753,14 @@
       "highlights": ""
     },
     {
-      "id": "dbeb0767-a621-472f-93a2-8742cbdd39bd",
+      "id": "800d8f30-31cd-4f16-afe5-9c8b6b655bc6",
       "img": null,
       "username": "lucasbento",
       "time": "3:22 PM",
       "msg": "<p>Right now you are working with open-source on your full-time job but how did you manage to work and maintain your personal projects on your free-time? Did you have a limit on how long time you would spend on it?</p>\n",
       "messages": [
         {
-          "id": "e800dc31-4ddc-4a24-a1b6-e8a671e49996",
+          "id": "5060cf5a-4dbf-4a4b-99e7-4a2a9b780f48",
           "img": null,
           "username": "Dan",
           "time": "3:40 PM",
@@ -771,14 +771,14 @@
       "highlights": ""
     },
     {
-      "id": "43d8682c-ae97-4f12-acc1-0f53d53d2f99",
+      "id": "0d38e769-31c8-4df6-8f83-e5d23c7ef921",
       "img": null,
       "username": "sibelius",
       "time": "3:39 PM",
       "msg": "<blockquote>\n<p>How Facebook structure their frontend code? there is a bunch of microapps? if so how to you make them communicate each other?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "8ec37d50-af78-46a2-973f-85b18e929171",
+          "id": "f2014729-adc8-430c-8842-26b17e204bb7",
           "img": null,
           "username": "Dan",
           "time": "3:40 PM",
@@ -789,14 +789,14 @@
       "highlights": "frontend"
     },
     {
-      "id": "2d17ef22-fb4f-48c6-a9e1-76907e5fcab9",
+      "id": "50a6dc4b-53f4-4bfb-a6fc-ac3ad86e899f",
       "img": null,
       "username": "fdaciuk",
       "time": "3:41 PM",
       "msg": "<p>Hi Dan! Are you using SSR with HHVM? If yes, which tools are you using for? (edited)</p>\n",
       "messages": [
         {
-          "id": "acad382f-2936-4894-b9b4-a168ac70f51b",
+          "id": "7444c4cc-6e31-4be5-91c7-2cc224829a3b",
           "img": null,
           "username": "Dan",
           "time": "3:42 PM",
@@ -807,14 +807,14 @@
       "highlights": "ssr"
     },
     {
-      "id": "4c264a37-0270-4e4f-b541-e3b6912f1230",
+      "id": "fd0d475f-9170-4bfb-98eb-6f8bf4a960f0",
       "img": null,
       "username": "sibelius",
       "time": "3:41 PM",
       "msg": "<blockquote>\n<p>is there any machine learning algorithms to improve frontend code? I heard code splitting is done like that, any other places to apply ML in fronted?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "3459fb09-3e6c-46c8-a0de-4ed058c1a545",
+          "id": "e2eb084d-a9e6-4895-b264-e6f06aecf55f",
           "img": null,
           "username": "Dan",
           "time": "3:44 PM",
@@ -825,14 +825,14 @@
       "highlights": "frontend"
     },
     {
-      "id": "9db5c997-1466-4bf8-a16f-3ded02f014fa",
+      "id": "bb7e655a-6c71-4576-870d-9a31248f07d8",
       "img": null,
       "username": "andrei_calazans",
       "time": "3:41 PM",
       "msg": "<p>Do you think Mobx has grown to become a better state handler than Redux? whats your opinion on that?</p>\n",
       "messages": [
         {
-          "id": "ef5e7c4c-5170-46a4-afd8-5ff73627bfa8",
+          "id": "ca461e62-6703-4576-975b-3f825253a941",
           "img": null,
           "username": "Dan",
           "time": "3:45 PM",
@@ -843,14 +843,14 @@
       "highlights": "redux"
     },
     {
-      "id": "97c475b2-602c-4770-beec-90ded6e18a42",
+      "id": "80d3e49b-f537-4a0a-aea2-65c86fa4f88c",
       "img": null,
       "username": "Diego Nascimento",
       "time": "3:42 PM",
       "msg": "<p>What do you think about other forms of DOM manipulation, such as incremental-dom or glimmer?</p>\n",
       "messages": [
         {
-          "id": "83eb23fc-3ff4-43c3-b71f-3c0a651ef296",
+          "id": "7f8015d3-f8a1-4e75-aa65-8d8b5e484ce9",
           "img": null,
           "username": "Dan",
           "time": "3:46 PM",
@@ -861,14 +861,14 @@
       "highlights": ""
     },
     {
-      "id": "43d408f4-ac1c-41c3-bd82-e7abb2802631",
+      "id": "a127b3be-f944-436a-bc48-0a549af216a0",
       "img": null,
       "username": "dnvtrn",
       "time": "3:45 PM",
       "msg": "<p>What is the best solution to work with SSR and Create React App, avoiding the known problem about Google SEO web crawlers?</p>\n",
       "messages": [
         {
-          "id": "bcf24f39-9363-4b2d-9ace-cc30c9b864c2",
+          "id": "ccda20d9-4193-4abb-9a20-da5261462879",
           "img": null,
           "username": "Dan",
           "time": "3:47 PM",
@@ -879,14 +879,14 @@
       "highlights": "react ssr web"
     },
     {
-      "id": "58042fe0-866f-4c93-800f-d5505292b537",
+      "id": "476e2a39-13a5-4ff6-b5df-809b998017d4",
       "img": null,
       "username": "sibelius",
       "time": "3:42 PM",
       "msg": "<blockquote>\n<p>how async react will improve animations frameworks?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "cd679a1e-9f5d-4bfb-8e62-c8d2b6863c3a",
+          "id": "dd93bd3f-9af7-4d99-abcd-dbbe8d5e0e2f",
           "img": null,
           "username": "Dan",
           "time": "3:48 PM",
@@ -897,14 +897,14 @@
       "highlights": "animation animations animação animações async react"
     },
     {
-      "id": "e2e5b6c1-36d5-4826-aca7-cd09bfaf5182",
+      "id": "29436e15-6535-4e01-a041-e774effdb9f9",
       "img": null,
       "username": "sibelius",
       "time": "3:43 PM",
       "msg": "<blockquote>\n<p>which other technical fields would you like to work? robots?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "d738e790-3091-4bbe-818c-d5623f9e8e92",
+          "id": "373f315a-7a4a-45c5-8fa2-4681fd7bb2c9",
           "img": null,
           "username": "Dan",
           "time": "3:49 PM",
@@ -915,14 +915,14 @@
       "highlights": ""
     },
     {
-      "id": "64022a25-06eb-4ad5-beb2-87dc2ebd3b50",
+      "id": "1b1b28fc-463c-4a3e-b384-39df0b2df12d",
       "img": null,
       "username": "brunolemos",
       "time": "3:48 PM",
       "msg": "<p>What is that you think may be big in a few years that only a few people is paying attention right now?</p>\n",
       "messages": [
         {
-          "id": "d7ee5644-eec8-446b-b8b6-24765259ef1f",
+          "id": "7d5de2a0-b625-42b0-a895-b39c5c2a3c95",
           "img": null,
           "username": "Dan",
           "time": "3:50 PM",
@@ -933,14 +933,14 @@
       "highlights": ""
     },
     {
-      "id": "50d81a41-beee-4ee4-9c15-b578d0429323",
+      "id": "1889f3f5-c2fa-498f-aa4b-4233e796b86b",
       "img": null,
       "username": "brunolemos",
       "time": "3:47 PM",
       "msg": "<p>Thoughts on Flutter?</p>\n",
       "messages": [
         {
-          "id": "fee30ded-70c8-43ca-aa2f-5d611a2f8290",
+          "id": "3a368b4d-9cc9-497d-ac07-651b8ce764a4",
           "img": null,
           "username": "Dan",
           "time": "3:51 PM",
@@ -951,14 +951,14 @@
       "highlights": ""
     },
     {
-      "id": "b0b80d0d-e04a-4e69-9e78-de34714bd825",
+      "id": "12b2a47b-d034-4371-916d-ea0baa26cab9",
       "img": null,
       "username": "Aldo Jr.",
       "time": "3:51 PM",
       "msg": "<p>Dan, what do you think about PWA?</p>\n",
       "messages": [
         {
-          "id": "d4e04ed5-4409-4f45-a8d5-35f99f61ba3b",
+          "id": "1e23a724-f477-465a-aec2-5b070ccb6397",
           "img": null,
           "username": "Dan",
           "time": "3:51 PM",
@@ -969,14 +969,14 @@
       "highlights": "pwa"
     },
     {
-      "id": "7e9d6530-d1e7-4d06-864f-2bbb27df68c2",
+      "id": "bacd0525-7e85-4059-b84e-3dff9ea0b56b",
       "img": null,
       "username": "fdaciuk",
       "time": "3:49 PM",
       "msg": "<p>When did you start learning functional programming? Could you recommend any language to get start with?</p>\n",
       "messages": [
         {
-          "id": "0e9f9a7f-bb9a-4f7d-9f7e-a4ac2d216223",
+          "id": "9507cbf0-420f-4807-81a1-c46b68139085",
           "img": null,
           "username": "Dan",
           "time": "3:52 PM",
@@ -987,14 +987,14 @@
       "highlights": ""
     },
     {
-      "id": "21a80261-6092-4ae4-96fc-92ed06873dcc",
+      "id": "ceb8183a-12aa-40eb-89df-7e981b43b03e",
       "img": null,
       "username": "leolopes",
       "time": "3:42 PM",
       "msg": "<p>In the scope of react-native, what do you consider the must-have skills to be considered a good react-native programmer?</p>\n",
       "messages": [
         {
-          "id": "e3e737f5-d65e-43b4-995c-40a1754db53a",
+          "id": "04442613-f68d-4634-8257-50dce4052101",
           "img": null,
           "username": "Dan",
           "time": "3:53 PM",
@@ -1005,14 +1005,14 @@
       "highlights": "native react"
     },
     {
-      "id": "2e4ca11e-5435-4678-9611-f81fb1eb85b5",
+      "id": "43312545-66e0-4bdf-be45-b146bd186a47",
       "img": null,
       "username": "guilherme_vasconcelos",
       "time": "3:46 PM",
       "msg": "<p>What are the topics you suggest developers - involved with React and its ecosystem - to focus on studying in order to be prepared for the future or next years?</p>\n",
       "messages": [
         {
-          "id": "7c9ddde8-77f1-44ce-a4bd-157aa810317a",
+          "id": "ea9e0fc0-3869-444d-bcfd-21f15a06c7dd",
           "img": null,
           "username": "Dan",
           "time": "3:53 PM",
@@ -1023,14 +1023,14 @@
       "highlights": "react"
     },
     {
-      "id": "f870d8b8-0862-4d29-9dff-c0824b6c6c71",
+      "id": "421e9bde-2f64-4cf3-839a-f4d886ef2132",
       "img": null,
       "username": "sibelius",
       "time": "3:53 PM",
       "msg": "<blockquote>\n<p>which books changed your life?</p>\n</blockquote>\n",
       "messages": [
         {
-          "id": "dd0d1a43-3285-431c-a207-527a6e6bb786",
+          "id": "5753858b-5624-40dd-8c78-f1f345c81f02",
           "img": null,
           "username": "Dan",
           "time": "3:54 PM",
@@ -1041,14 +1041,14 @@
       "highlights": "book books livro livros"
     },
     {
-      "id": "65048add-b056-4b82-adec-d6b7a3beb804",
+      "id": "b0798b0e-a1c5-4fc2-9423-ef7236a3fd47",
       "img": null,
       "username": "Jabur",
       "time": "3:55 PM",
       "msg": "<p>Hey @Dan thank you so much for your time, i`m pretty sure everybody really loved your answers.</p>\n",
       "messages": [
         {
-          "id": "188127de-4241-475c-aad0-f355a0e30cc9",
+          "id": "8f3f980e-2faa-48a4-abd8-3a1d35d6cb5b",
           "img": null,
           "username": "Jabur",
           "time": "3:55 PM",
@@ -1056,7 +1056,7 @@
           "highlights": "react"
         },
         {
-          "id": "b231c5f5-db1c-45d5-adf8-d6f0c19a2361",
+          "id": "ee44af02-48a7-477b-a03b-f236641a8872",
           "img": null,
           "username": "Dan",
           "time": "3:57 PM",
@@ -1064,7 +1064,7 @@
           "highlights": "react"
         },
         {
-          "id": "7e8bfa7f-725e-442d-80ca-4cd48b31afbd",
+          "id": "51d99873-ee9e-4a66-b8ce-4bcb90114916",
           "img": null,
           "username": "Jabur",
           "time": "3:58 PM",
@@ -1072,7 +1072,7 @@
           "highlights": ""
         },
         {
-          "id": "87139d77-28ff-4681-b6dd-95d83e455ec4",
+          "id": "8fe4f2a2-ee5b-4323-9ff4-d83fab71599f",
           "img": null,
           "username": "Dan",
           "time": "4:01 PM",
@@ -1080,7 +1080,7 @@
           "highlights": "mobile"
         },
         {
-          "id": "5559c333-ff05-4450-bdcc-4896891b9569",
+          "id": "602c56be-485e-450d-90dc-196ef43b6813",
           "img": null,
           "username": "Jabur",
           "time": "4:01 PM",
