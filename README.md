@@ -17,9 +17,9 @@ node scripts/generate-session-object.js -p data/channel/general.txt
 
 This command will generate or update the 'public/data/channel/general.json' file.
 
-For now, the system still does not automatically generate menus for new created channels. To do this you should change the file [src/components/aside-menu.js](https://github.com/raphox/slack-history/blob/master/src/components/aside-menu.js).
+> Attention: For now, the system still does not automatically generate menus for new created channels. To do this you should change the file [src/components/aside-menu.js](https://github.com/raphox/slack-history/blob/master/src/components/aside-menu.js).
 
-## Publishing the new history
+## Publishing the new history files
 
 We are using the [gh-pages](https://github.com/tschaub/gh-pages) package to generate and publish our data in https://raphox.github.io/slack-history.
 

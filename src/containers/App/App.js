@@ -17,7 +17,7 @@ class App extends Component {
           <Content>
             <AsideMenu />
             <Switch>
-              <Redirect exact from='/' to="/channel/dan-abramov-201804"/>
+              <Redirect exact from='/' to="/qa/dan-abramov-201804"/>
               <Route path='/:session/:channel' component={Channel}/>
             </Switch>
           </Content>
