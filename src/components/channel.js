@@ -63,7 +63,7 @@ class Channel extends Component {
   }
 
   render() {
-    const { session, isFetching, match } = this.props;
+    const { session, isFetching } = this.props;
 
     return (
       <Wrapper>

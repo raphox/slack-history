@@ -65,19 +65,19 @@ class ChannelHeader extends Component {
       <Header>
         <Aside style={{flex: 'auto', border: 'none'}}>
           <h1>{ title }</h1>
-          {!isFetching && ['qa', 'channel'].indexOf(match.params.session) != -1 &&
+          {!isFetching && ['qa', 'channel'].indexOf(match.params.session) !== -1 &&
             <ul>
               <li><FontAwesomeIcon icon="user" fixedWidth/> { session.info.authors.length } authors</li>
               <li><FontAwesomeIcon icon="thumbtack" fixedWidth/> { session.messages.length } messages</li>
               <li>{ session.info.details }</li>
             </ul>}
-          {['author'].indexOf(match.params.session) != -1 &&
+          {['author'].indexOf(match.params.session) !== -1 &&
             <ul>
               <li>About author</li>
             </ul>
           }
         </Aside>
-        {['qa', 'channel'].indexOf(match.params.session) != -1 &&
+        {['qa', 'channel'].indexOf(match.params.session) !== -1 &&
           <Search style={{border: 'none'}}>
             <FontAwesomeIcon icon="search" color="#a0a0a2" />
             <input type="text" placeholder="Search"
